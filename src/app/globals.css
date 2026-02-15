@@ -1,26 +1,57 @@
 @import "tailwindcss";
 
+@theme {
+  --color-background: #0B1120;
+  --color-foreground: #FFFFFF;
+
+  --color-oxford-blue: #0B1120;
+  --color-neon-orange: #FF8A00;
+  --color-secondary-orange: #FF4D00;
+  --color-text-slate: #94A3B8;
+
+  --font-sans: "Inter", var(--font-geist-sans);
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #0B1120;
+  --foreground: #FFFFFF;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Efecto Glow Neón */
+.neon-glow {
+  text-shadow: 0 0 10px rgba(255, 138, 0, 0.5), 0 0 20px rgba(255, 138, 0, 0.3);
+}
+
+.neon-border {
+  border: 2px solid #FF8A00;
+  box-shadow:
+    0 0 5px #FF8A00,
+    0 0 10px #FF8A00,
+    inset 0 0 2px #FF8A00;
+}
+
+.neon-border-intense {
+  border: 3px solid #FFFFFF;
+  /* Núcleo blanco para efecto tubo real */
+  box-shadow:
+    0 0 5px #FF8A00,
+    0 0 15px #FF8A00,
+    0 0 30px #FF8A00,
+    inset 0 0 5px #FF8A00;
+}
+
+/* Glassmorphism */
+.glass {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
 }
