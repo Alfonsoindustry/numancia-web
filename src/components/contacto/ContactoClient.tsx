@@ -33,7 +33,7 @@ export default function ContactoClient() {
                                 <span className="text-neon-orange neon-glow">en toda Soria</span>
                             </h1>
                             <p className="text-text-slate text-lg md:text-xl leading-relaxed mb-12">
-                                ¿Tienes un proyecto en mente o necesitas digitalizar tu negocio? No hay oficina física porque nosotros **nos desplazamos a tu comercio en cualquier punto de la provincia**.
+                                ¿Tienes un proyecto en mente o necesitas digitalizar tu negocio? No hay oficina física porque nosotros <span className="font-bold text-white">nos desplazamos a tu comercio en cualquier punto de la provincia</span>.
                                 Trato cercano, real y soriano.
                             </p>
 
@@ -105,7 +105,7 @@ export default function ContactoClient() {
                                         <input
                                             required
                                             type="tel"
-                                            placeholder="600 000 000"
+                                            placeholder="000 000 000"
                                             className="w-full bg-white/5 border border-white/10 rounded-xl px-5 py-4 focus:outline-none focus:border-neon-orange/50 transition-all"
                                         />
                                     </div>
