@@ -29,10 +29,10 @@ export default function SobreNosotrosClient() {
                             </p>
                             <div className="flex flex-wrap gap-4">
                                 <div className="glass px-6 py-3 rounded-full border border-white/5 text-sm font-bold flex items-center gap-2">
-                                    <CheckCircle2 size={16} className="text-neon-orange" /> +10 Años de Experiencia
+                                    <CheckCircle2 size={16} className="text-neon-orange" /> Innovación Sin Fronteras
                                 </div>
                                 <div className="glass px-6 py-3 rounded-full border border-white/5 text-sm font-bold flex items-center gap-2">
-                                    <CheckCircle2 size={16} className="text-neon-orange" /> 100% Capital Soriano
+                                    <CheckCircle2 size={16} className="text-neon-orange" /> Soporte Directo y Real
                                 </div>
                             </div>
                         </motion.div>
@@ -44,7 +44,7 @@ export default function SobreNosotrosClient() {
                             className="relative aspect-square glass rounded-[3rem] border border-white/10 overflow-hidden shadow-2xl"
                         >
                             <Image
-                                src="/images/sobre-nosotros-hero.png"
+                                src="/images/sobre-nosotros-v2.png"
                                 alt="Agencia de Marketing Digital y SEO en Soria - Numancia Digital"
                                 fill
                                 className="object-cover opacity-80"
