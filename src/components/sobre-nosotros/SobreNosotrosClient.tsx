@@ -44,10 +44,10 @@ export default function SobreNosotrosClient() {
                             className="relative aspect-square glass rounded-[3rem] border border-white/10 overflow-hidden shadow-2xl"
                         >
                             <Image
-                                src="/images/sobre-nosotros-v3.png"
+                                src="/images/sobre-nosotros-v4.png"
                                 alt="Agencia de Marketing Digital y SEO en Soria - Numancia Digital"
                                 fill
-                                className="object-cover opacity-90"
+                                className="object-cover opacity-100"
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-[#0B1120] via-transparent to-transparent" />
                         </motion.div>

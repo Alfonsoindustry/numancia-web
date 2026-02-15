@@ -158,7 +158,7 @@ export default function HomeClient() {
                                 {[
                                     "Tecnología Serverless (rápida y segura)",
                                     "Automatización total de procesos",
-                                    "Cuotas asequibles (600€ a 1.000€)",
+                                    "Precios asequibles (600€ a 1.000€)",
                                     "Soporte Kilómetro Cero (Soria)"
                                 ].map((item, idx) => (
                                     <li key={idx} className="flex items-center gap-3 text-white font-medium">
