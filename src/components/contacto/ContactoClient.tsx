@@ -7,12 +7,34 @@ import Footer from "@/components/Footer";
 import { useState } from "react";
 
 export default function ContactoClient() {
-    const [status, setStatus] = useState<"idle" | "sending" | "success">("idle");
+    const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
+    const [formData, setFormData] = useState({
+        name: "",
+        phone: "",
+        subject: "Diseño Web",
+        message: ""
+    });
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         setStatus("sending");
-        setTimeout(() => setStatus("success"), 1500);
+
+        try {
+            const response = await fetch('/api/contact', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData),
+            });
+
+            if (response.ok) {
+                setStatus("success");
+                setFormData({ name: "", phone: "", subject: "Diseño Web", message: "" });
+            } else {
+                setStatus("error");
+            }
+        } catch (error) {
+            setStatus("error");
+        }
     };
 
     return (
@@ -54,7 +76,7 @@ export default function ContactoClient() {
                                     </div>
                                     <div>
                                         <p className="text-white/40 text-sm font-bold uppercase tracking-widest">Email</p>
-                                        <p className="text-xl font-bold">hola@numancia.digital</p>
+                                        <p className="text-xl font-bold">buzon@numanciadigital.es</p>
                                     </div>
                                 </div>
 
@@ -96,6 +118,8 @@ export default function ContactoClient() {
                                         <input
                                             required
                                             type="text"
+                                            value={formData.name}
+                                            onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                                             placeholder="Tu nombre"
                                             className="w-full bg-white/5 border border-white/10 rounded-xl px-5 py-4 focus:outline-none focus:border-neon-orange/50 transition-all"
                                         />
@@ -105,6 +129,8 @@ export default function ContactoClient() {
                                         <input
                                             required
                                             type="tel"
+                                            value={formData.phone}
+                                            onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                                             placeholder="000 000 000"
                                             className="w-full bg-white/5 border border-white/10 rounded-xl px-5 py-4 focus:outline-none focus:border-neon-orange/50 transition-all"
                                         />
@@ -112,7 +138,11 @@ export default function ContactoClient() {
                                 </div>
                                 <div className="space-y-2">
                                     <label className="text-sm font-bold text-white/60 ml-1">ASUNTO</label>
-                                    <select className="w-full bg-white/5 border border-white/10 rounded-xl px-5 py-4 focus:outline-none focus:border-neon-orange/50 transition-all appearance-none">
+                                    <select
+                                        value={formData.subject}
+                                        onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
+                                        className="w-full bg-white/5 border border-white/10 rounded-xl px-5 py-4 focus:outline-none focus:border-neon-orange/50 transition-all appearance-none"
+                                    >
                                         <option className="bg-[#0B1120]">Diseño Web</option>
                                         <option className="bg-[#0B1120]">SEO Local</option>
                                         <option className="bg-[#0B1120]">Redes Sociales</option>
@@ -123,27 +153,32 @@ export default function ContactoClient() {
                                     <label className="text-sm font-bold text-white/60 ml-1">MENSAJE</label>
                                     <textarea
                                         rows={4}
+                                        value={formData.message}
+                                        onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                                         placeholder="Cuéntanos un poco sobre tu negocio..."
                                         className="w-full bg-white/5 border border-white/10 rounded-xl px-5 py-4 focus:outline-none focus:border-neon-orange/50 transition-all resize-none"
                                     />
                                 </div>
 
                                 <button
-                                    disabled={status !== "idle"}
-                                    className={`w-full py-5 rounded-2xl font-bold text-lg flex items-center justify-center gap-3 transition-all ${status === "success" ? "bg-green-500" : "bg-neon-orange hover:bg-secondary-orange shadow-[0_0_30px_rgba(255,138,0,0.3)]"}`}
+                                    disabled={status === "sending" || status === "success"}
+                                    className={`w-full py-5 rounded-2xl font-bold text-lg flex items-center justify-center gap-3 transition-all ${status === "success" ? "bg-green-500" : status === "error" ? "bg-red-500" : "bg-neon-orange hover:bg-secondary-orange shadow-[0_0_30px_rgba(255,138,0,0.3)]"}`}
                                 >
                                     {status === "idle" && <><Send size={20} /> Enviar Mensaje</>}
                                     {status === "sending" && "Enviando..."}
                                     {status === "success" && "¡Mensaje Enviado!"}
+                                    {status === "error" && "Error al enviar. Reintenta."}
                                 </button>
                                 <p className="text-center text-xs text-white/30">Responderemos en menos de 24 horas laborables.</p>
                             </form>
-                        </motion.div>
-                    </div>
+                            <p className="text-center text-xs text-white/30">Responderemos en menos de 24 horas laborables.</p>
+                        </form>
+                    </motion.div>
                 </div>
-            </main>
-
-            <Footer />
         </div>
+            </main >
+
+        <Footer />
+        </div >
     );
 }

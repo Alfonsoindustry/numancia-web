@@ -7,7 +7,7 @@ export const siteConfig = {
         instagram: "https://instagram.com/numancia.digital",
     },
     contact: {
-        email: "hola@numancia.digital",
+        email: "buzon@numanciadigital.es",
         phone: "+34 671 883 656",
     }
 };
