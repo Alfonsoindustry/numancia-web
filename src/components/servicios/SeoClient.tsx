@@ -5,6 +5,7 @@ import { Search, MapPin, BarChart3, Target, ArrowRight } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function SeoServiceClient() {
     return (
@@ -38,14 +39,38 @@ export default function SeoServiceClient() {
                             initial={{ opacity: 0, scale: 0.9 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 1 }}
-                            className="relative aspect-video glass rounded-3xl border border-white/10 overflow-hidden group"
+                            className="relative aspect-video glass rounded-3xl border border-white/10 overflow-hidden group shadow-2xl"
                         >
+                            <Image
+                                src="/images/servicios-seo.png"
+                                alt="SEO Local en Soria"
+                                fill
+                                className="object-cover opacity-60 group-hover:opacity-80 transition-opacity"
+                            />
                             <div className="absolute inset-0 bg-gradient-to-br from-neon-orange/20 to-transparent opacity-50 transition-opacity" />
-                            <div className="flex h-full items-center justify-center">
+                            <div className="flex h-full items-center justify-center relative z-10">
                                 <MapPin size={120} className="text-neon-orange/50 group-hover:scale-110 transition-transform duration-500" />
                             </div>
                         </motion.div>
                     </div>
+
+                    {/* Nueva Sección: Visibilidad Local */}
+                    <motion.div
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        className="glass p-12 rounded-[3rem] border border-white/5 mb-24 relative overflow-hidden"
+                    >
+                        <div className="absolute top-0 right-0 p-8 opacity-10">
+                            <Target size={200} />
+                        </div>
+                        <div className="relative z-10">
+                            <h2 className="font-outfit text-4xl font-bold mb-6">Visibilidad que Convierte</h2>
+                            <p className="text-text-slate text-xl leading-relaxed max-w-3xl">
+                                El SEO no es solo para aparecer en Google; es para que te encuentren los clientes que están listos para comprar en Soria. Optimizamos tu ficha de Google Business Profile y tu contenido web para que, cuando un soriano busque lo que ofreces, tu nombre sea el primero que vea.
+                            </p>
+                        </div>
+                    </motion.div>
 
                     <div className="grid md:grid-cols-3 gap-8">
                         {[

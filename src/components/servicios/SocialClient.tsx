@@ -5,6 +5,7 @@ import { Instagram, Heart, Share2, ArrowRight } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function SocialServiceClient() {
     return (
@@ -38,14 +39,38 @@ export default function SocialServiceClient() {
                             initial={{ opacity: 0, scale: 0.9 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 1 }}
-                            className="relative aspect-video glass rounded-3xl border border-white/10 overflow-hidden group"
+                            className="relative aspect-video glass rounded-3xl border border-white/10 overflow-hidden group shadow-2xl"
                         >
-                            <div className="absolute inset-0 bg-gradient-to-br from-neon-orange/20 to-transparent opacity-50" />
-                            <div className="flex h-full items-center justify-center">
+                            <Image
+                                src="/images/servicios-redes.png"
+                                alt="Gestión de Redes Sociales en Soria"
+                                fill
+                                className="object-cover opacity-60 group-hover:opacity-80 transition-opacity"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-br from-neon-orange/20 to-transparent opacity-50 transition-opacity" />
+                            <div className="flex h-full items-center justify-center relative z-10">
                                 <Instagram size={120} className="text-neon-orange/50 group-hover:rotate-6 transition-transform duration-500" />
                             </div>
                         </motion.div>
                     </div>
+
+                    {/* Nueva Sección: Engagement Local */}
+                    <motion.div
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        className="glass p-12 rounded-[3rem] border border-white/5 mb-24 relative overflow-hidden"
+                    >
+                        <div className="absolute top-0 right-0 p-8 opacity-10">
+                            <Share2 size={200} />
+                        </div>
+                        <div className="relative z-10">
+                            <h2 className="font-outfit text-4xl font-bold mb-6">Humanizamos tu Marca</h2>
+                            <p className="text-text-slate text-xl leading-relaxed max-w-3xl">
+                                Las redes sociales no son un catálogo; son un canal de comunicación. Creamos contenido que resuena con la gente de Soria, resaltando tus valores, tu equipo y lo que te hace único. No buscamos solo "likes", buscamos construir una comunidad fiel que elija tu negocio una y otra vez.
+                            </p>
+                        </div>
+                    </motion.div>
 
                     <div className="grid md:grid-cols-3 gap-8">
                         {[
