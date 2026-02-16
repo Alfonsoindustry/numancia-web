@@ -104,7 +104,7 @@ export default function ServiciosClient() {
                         <p className="text-text-slate text-lg mb-10 max-w-2xl mx-auto">
                             Analizamos tu negocio sin coste y te proponemos la solución que mejor se adapte a tus necesidades y presupuesto.
                         </p>
-                        <Link href="/contacto" className="inline-block glass text-white px-10 py-5 rounded-2xl font-bold text-xl hover:bg-white/5 transition-all">
+                        <Link href="/contacto" className="inline-block bg-neon-orange text-white px-12 py-6 rounded-2xl font-bold text-2xl hover:bg-secondary-orange shadow-[0_0_50px_rgba(255,138,0,0.4)] transition-all transform hover:scale-105 active:scale-95 neon-border">
                             Solicitar Asesoramiento Gratuito
                         </Link>
                     </div>
