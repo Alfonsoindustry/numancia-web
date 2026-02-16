@@ -45,12 +45,8 @@ export default function SeoServiceClient() {
                                 src="/images/servicios-seo.png"
                                 alt="SEO Local en Soria"
                                 fill
-                                className="object-cover opacity-60 group-hover:opacity-80 transition-opacity"
+                                className="object-cover transition-transform duration-700 group-hover:scale-105"
                             />
-                            <div className="absolute inset-0 bg-gradient-to-br from-neon-orange/20 to-transparent opacity-50 transition-opacity" />
-                            <div className="flex h-full items-center justify-center relative z-10">
-                                <MapPin size={120} className="text-neon-orange/50 group-hover:scale-110 transition-transform duration-500" />
-                            </div>
                         </motion.div>
                     </div>
 

@@ -46,12 +46,8 @@ export default function WebServiceClient() {
                                 src="/images/servicios-web.png"
                                 alt="Diseño Web Profesional en Soria"
                                 fill
-                                className="object-cover opacity-60 group-hover:opacity-80 transition-opacity"
+                                className="object-cover transition-transform duration-700 group-hover:scale-105"
                             />
-                            <div className="absolute inset-0 bg-gradient-to-br from-neon-orange/20 to-transparent opacity-50 group-hover:opacity-100 transition-opacity" />
-                            <div className="flex h-full items-center justify-center relative z-10">
-                                <Layout size={120} className="text-neon-orange/50 group-hover:scale-110 transition-transform duration-500" />
-                            </div>
                         </motion.div>
                     </div>
 
