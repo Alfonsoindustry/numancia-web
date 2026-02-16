@@ -13,7 +13,7 @@ export async function POST(req: Request) {
         const { name, phone, subject, message } = await req.json();
 
         const { data, error } = await resend.emails.send({
-            from: 'Numancia Digital <contacto@numancia.digital>',
+            from: 'Numancia Digital <hola@numanciadigital.es>',
             to: ['buzon@numanciadigital.es'],
             subject: `Nueva Consulta: ${subject} - ${name}`,
             html: `
