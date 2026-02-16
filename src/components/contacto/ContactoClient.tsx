@@ -171,14 +171,12 @@ export default function ContactoClient() {
                                 </button>
                                 <p className="text-center text-xs text-white/30">Responderemos en menos de 24 horas laborables.</p>
                             </form>
-                            <p className="text-center text-xs text-white/30">Responderemos en menos de 24 horas laborables.</p>
-                        </form>
-                    </motion.div>
+                        </motion.div>
+                    </div>
                 </div>
-        </div>
-            </main >
+            </main>
 
-        <Footer />
-        </div >
+            <Footer />
+        </div>
     );
 }
