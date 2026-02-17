@@ -29,7 +29,7 @@ export default function AvisoLegalClient() {
                                     <li><strong>Titular:</strong> Numancia Digital (Hugo)</li>
                                     <li><strong>Domicilio Social:</strong> Calle El Collado, Soria, España</li>
                                     <li><strong>CIF/NIF:</strong> [Pendiente de completar]</li>
-                                    <li><strong>Email:</strong> hola@numancia.digital</li>
+                                    <li><strong>Email:</strong> buzon@numanciadigital.es</li>
                                 </ul>
                             </section>
 

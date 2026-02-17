@@ -62,7 +62,7 @@ export default function PrivacidadClient() {
                                     <li>Presentar una reclamación ante la autoridad de control (aepd.es) si considera que el tratamiento no se ajusta a la normativa vigente.</li>
                                 </ul>
                                 <p className="mt-4 font-bold text-white">
-                                    Puede ejercer sus derechos enviando un email a: hola@numancia.digital
+                                    Puede ejercer sus derechos enviando un email a: buzon@numanciadigital.es
                                 </p>
                             </section>
 
