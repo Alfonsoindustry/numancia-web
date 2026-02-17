@@ -37,13 +37,9 @@ const services = [
 export default function HomeClient() {
     return (
         <div className="relative min-h-screen bg-[#0B1120] overflow-hidden selection:bg-neon-orange/30 selection:text-neon-orange">
-            {/* Mesh Gradients Animados (Fondo de Alta Riqueza) */}
-            <div className="fixed inset-0 pointer-events-none z-0">
-                <div className="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-neon-orange/15 rounded-full blur-[120px] animate-mesh" />
-                <div className="absolute bottom-[20%] right-[-10%] w-[60%] h-[60%] bg-electric-violet/10 rounded-full blur-[140px] animate-mesh" style={{ animationDelay: '-2s' }} />
-                <div className="absolute top-[40%] left-[20%] w-[40%] h-[40%] bg-secondary-orange/5 rounded-full blur-[100px] animate-mesh" style={{ animationDelay: '-5s' }} />
-                <div className="absolute bottom-[-10%] left-[10%] w-[50%] h-[50%] bg-neon-orange/10 rounded-full blur-[120px] animate-mesh" style={{ animationDelay: '-1s' }} />
-            </div>
+            {/* Luces de fondo (Efecto Neón Original) */}
+            <div className="absolute top-0 -left-4 w-96 h-96 bg-neon-orange/10 rounded-full blur-[120px] pointer-events-none" />
+            <div className="absolute bottom-0 -right-4 w-96 h-96 bg-neon-orange/5 rounded-full blur-[120px] pointer-events-none" />
 
             <Navbar />
 
@@ -104,11 +100,11 @@ export default function HomeClient() {
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            className="font-outfit text-4xl md:text-5xl font-bold mb-6"
+                            className="font-outfit text-4xl md:text-5xl font-bold mb-4 text-neon-orange"
                         >
-                            Nuestros Servicios <span className="text-neon-orange italic">Km 0</span>
+                            Nuestros Servicios Km 0
                         </motion.h2>
-                        <p className="text-text-slate text-lg max-w-2xl mx-auto leading-relaxed">
+                        <p className="text-white font-bold text-[1.25rem] max-w-3xl mx-auto leading-relaxed">
                             Todo lo que tu negocio necesita para dominar el entorno digital con la cercanía que solo Soria puede ofrecer.
                         </p>
                     </div>
