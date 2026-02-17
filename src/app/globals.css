@@ -6,11 +6,22 @@
   --color-foreground: #FFFFFF;
 
   --color-oxford-blue: #0B1120;
-  --color-neon-orange: #FF8A00;
-  --color-secondary-orange: #FF4D00;
-  --color-text-slate: #94A3B8;
+  --neon-orange: #FF8A00;
+  --secondary-orange: #FF5C00;
+  --electric-violet: #8B5CF6;
+  --text-slate: #94A3B8;
+  --bg-dark: #0B1120;
 
   --font-sans: "Inter", var(--font-geist-sans);
+}
+
+@keyframes mesh-glow {
+  0%, 100% { opacity: 0.5; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.1); }
+}
+
+.animate-mesh {
+  animation: mesh-glow 10s ease-in-out infinite;
 }
 
 :root {
