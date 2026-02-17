@@ -100,7 +100,7 @@ export default function HomeClient() {
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            className="font-outfit text-4xl md:text-5xl font-bold mb-4 text-neon-orange"
+                            className="font-outfit text-4xl md:text-5xl font-bold mb-4 text-neon-orange neon-glow"
                         >
                             Nuestros Servicios Km 0
                         </motion.h2>
@@ -198,29 +198,20 @@ export default function HomeClient() {
                 </div>
             </section>
 
-            {/* CTA Final de Impacto */}
-            <section className="py-32 px-6 text-center relative z-10">
-                <motion.div
-                    initial={{ scale: 0.95, opacity: 0 }}
-                    whileInView={{ scale: 1, opacity: 1 }}
-                    viewport={{ once: true }}
-                    className="max-w-4xl mx-auto relative group"
-                >
-                    <div className="absolute -inset-1 bg-gradient-to-r from-neon-orange to-electric-violet rounded-[3rem] blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
-                    <div className="relative glass p-16 md:p-24 rounded-[3rem] border border-white/10 overflow-hidden">
-                        <div className="absolute -bottom-20 -left-20 w-80 h-80 bg-neon-orange/20 rounded-full blur-[100px] pointer-events-none" />
-                        <div className="absolute -top-20 -right-20 w-80 h-80 bg-electric-violet/10 rounded-full blur-[100px] pointer-events-none" />
-
-                        <h2 className="font-outfit text-5xl md:text-6xl font-bold mb-8 leading-tight">¿Hablamos del <span className="text-neon-orange">futuro</span> de tu negocio?</h2>
-                        <p className="text-text-slate text-xl mb-12 max-w-2xl mx-auto leading-relaxed">
-                            Reserva una de nuestras 3 auditorías gratuitas mensuales para comercios de Soria.
-                            Veamos cómo la tecnología puede trabajar para ti.
-                        </p>
-                        <Link href="/contacto" className="inline-block bg-neon-orange text-white px-12 py-6 rounded-2xl font-bold text-2xl hover:bg-secondary-orange transition-all neon-border active:scale-95 shadow-[0_20px_50px_rgba(255,138,0,0.3)] transform hover:-translate-y-1">
-                            Solicitar Auditoría Gratis
-                        </Link>
-                    </div>
-                </motion.div>
+            {/* CTA Final */}
+            <section className="py-24 px-6 text-center">
+                <div className="max-w-3xl mx-auto glass p-12 rounded-[2rem] neon-border relative overflow-hidden">
+                    <div className="absolute -bottom-20 -left-20 w-64 h-64 bg-neon-orange/10 rounded-full blur-[100px] pointer-events-none" />
+                    <div className="absolute -top-20 -right-20 w-64 h-64 bg-neon-orange/10 rounded-full blur-[100px] pointer-events-none" />
+                    <h2 className="font-outfit text-4xl md:text-5xl font-bold mb-6">¿Preparado para el salto?</h2>
+                    <p className="text-text-slate text-lg mb-10">
+                        Ofrecemos una auditoría digital gratuita para los próximos 3 comercios en Soria.
+                        Sin compromiso, solo valor real.
+                    </p>
+                    <Link href="/contacto" className="inline-block bg-neon-orange text-white px-10 py-5 rounded-2xl font-bold text-xl hover:bg-secondary-orange transition-all neon-border active:scale-95 shadow-[0_0_30px_rgba(255,138,0,0.3)]">
+                        Solicitar Auditoría Gratis
+                    </Link>
+                </div>
             </section>
 
             <Footer />
