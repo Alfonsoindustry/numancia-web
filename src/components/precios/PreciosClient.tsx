@@ -36,7 +36,8 @@ const plans = [
             "Ofimática general",
             "Sistema de Automatización de Citas/Facturas",
             "Soporte Prioritario 24/7",
-            "Estrategia de contenidos anual"
+            "Estrategia de contenidos anual",
+            "Soluciones digitales a medida del cliente"
         ],
         cta: "Dar el salto Premium",
         highlight: true
