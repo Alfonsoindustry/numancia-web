@@ -9,7 +9,7 @@ import Link from "next/link";
 const plans = [
     {
         name: "Paquete de Digitalización Base",
-        price: "800",
+        price: "900",
         period: "/pago único",
         desc: "Para el comercio que necesita empezar con fuerza.",
         features: [
