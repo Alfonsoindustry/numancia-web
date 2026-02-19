@@ -20,10 +20,11 @@ export default function Footer() {
                 <p className="text-text-slate text-sm">
                     © {new Date().getFullYear()} Numancia Digital. Inspirado por Numancia, impulsado por el futuro.
                 </p>
-                <div className="flex gap-6 text-text-slate text-sm">
+                <div className="flex flex-wrap justify-center gap-6 text-text-slate text-sm">
                     <Link href="/sobre-nosotros" className="hover:text-white transition-colors">Sobre Nosotros</Link>
                     <Link href="/aviso-legal" className="hover:text-white transition-colors">Aviso Legal</Link>
                     <Link href="/privacidad" className="hover:text-white transition-colors">Privacidad</Link>
+                    <Link href="/legal/cookies" className="hover:text-white transition-colors">Cookies</Link>
                 </div>
             </div>
         </footer>
