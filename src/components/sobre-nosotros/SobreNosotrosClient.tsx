@@ -21,8 +21,8 @@ export default function SobreNosotrosClient() {
                             transition={{ duration: 0.8 }}
                         >
                             <h1 className="font-outfit text-5xl md:text-7xl font-bold mb-8 leading-tight">
-                                Tradición Numantina, <br />
-                                <span className="text-neon-orange neon-glow">Impulso Digital</span>
+                                Transforma Soria, <br />
+                                <span className="text-neon-orange neon-glow">Lidera lo Digital</span>
                             </h1>
                             <p className="text-text-slate text-lg md:text-xl leading-relaxed mb-8">
                                 En Numancia Digital no solo creamos webs o gestionamos redes; construimos el motor tecnológico de los negocios en Soria. Nacimos con una misión clara: demostrar que desde nuestra provincia se puede liderar la vanguardia digital.
@@ -45,7 +45,7 @@ export default function SobreNosotrosClient() {
                         >
                             <Image
                                 src="/images/sobre-nosotros-v5.png"
-                                alt="Agencia de Marketing Digital y SEO en Soria - Numancia Digital"
+                                alt="El equipo de Numancia Digital - Innovación y estrategia digital en la provincia de Soria"
                                 fill
                                 className="object-cover opacity-100"
                             />

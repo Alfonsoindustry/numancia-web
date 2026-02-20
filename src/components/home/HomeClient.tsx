@@ -82,7 +82,7 @@ export default function HomeClient() {
                             <div className="absolute inset-0 bg-neon-orange/20 rounded-full blur-[80px] animate-pulse" />
                             <Image
                                 src="/brand/logo_original_hq.png"
-                                alt="Agencia de Marketing Digital y Diseño Web en Soria - Numancia Digital"
+                                alt="Numancia Digital - Agencia de Marketing Digital y Diseño Web en Soria"
                                 fill
                                 className="object-contain drop-shadow-[0_0_40px_rgba(255,138,0,0.4)]"
                                 priority

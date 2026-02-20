@@ -24,8 +24,8 @@ export default function SocialServiceClient() {
                                 <Instagram size={16} /> REDES SOCIALES
                             </div>
                             <h1 className="font-outfit text-5xl md:text-7xl font-bold mb-8 leading-tight">
-                                Conecta con tu <br />
-                                <span className="text-neon-orange neon-glow">comunidad local</span>
+                                Redes Sociales <br />
+                                <span className="text-neon-orange neon-glow">Reales en Soria</span>
                             </h1>
                             <p className="text-text-slate text-lg md:text-xl leading-relaxed mb-10">
                                 En Soria, el boca a boca es digital. Gestionamos tus perfiles de Facebook e Instagram para que tu negocio sea el que más "ruido" haga en la provincia. Contenido real para gente real.
@@ -43,7 +43,7 @@ export default function SocialServiceClient() {
                         >
                             <Image
                                 src="/images/servicios-redes.png"
-                                alt="Gestión de Redes Sociales en Soria"
+                                alt="Gestión profesional de Redes Sociales (Instagram, Facebook) en Soria - Numancia Digital"
                                 fill
                                 className="object-cover transition-transform duration-700 group-hover:scale-105"
                             />

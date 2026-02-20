@@ -24,8 +24,8 @@ export default function SeoServiceClient() {
                                 <Search size={16} /> SEO LOCAL SORIA
                             </div>
                             <h1 className="font-outfit text-5xl md:text-7xl font-bold mb-8 leading-tight">
-                                Domina las <br />
-                                <span className="text-neon-orange neon-glow">búsquedas en Soria</span>
+                                Posicionamiento <br />
+                                <span className="text-neon-orange neon-glow">SEO Local en Soria</span>
                             </h1>
                             <p className="text-text-slate text-lg md:text-xl leading-relaxed mb-10">
                                 Cuando alguien busca tu producto o servicio en Soria, tienes que estar ahí. Optimizamos tu presencia en Google Maps y Google Search para que seas la opción #1 de tus vecinos.
@@ -43,7 +43,7 @@ export default function SeoServiceClient() {
                         >
                             <Image
                                 src="/images/servicios-seo.png"
-                                alt="SEO Local en Soria"
+                                alt="Estrategia de posicionamiento SEO Local y Google Maps en Soria - Numancia Digital"
                                 fill
                                 className="object-cover transition-transform duration-700 group-hover:scale-105"
                             />

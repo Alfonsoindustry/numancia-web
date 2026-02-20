@@ -50,7 +50,7 @@ export default function ServiciosClient() {
                             animate={{ opacity: 1, y: 0 }}
                             className="font-outfit text-5xl md:text-7xl font-bold mb-6"
                         >
-                            Nuestras <span className="text-neon-orange neon-glow">Soluciones Digitales</span>
+                            Soluciones de <span className="text-neon-orange neon-glow">Digitalización Km 0</span>
                         </motion.h1>
                         <p className="text-text-slate text-lg max-w-2xl mx-auto leading-relaxed">
                             En Numancia Digital combinamos la cercanía de Soria con la tecnología más avanzada del mercado. Elige el motor que impulsará tu negocio.

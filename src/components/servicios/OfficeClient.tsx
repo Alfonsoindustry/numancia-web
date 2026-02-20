@@ -24,8 +24,8 @@ export default function OfficeServiceClient() {
                                 <Zap size={16} /> OFIMÁTICA Y AUTOMATIZACIÓN
                             </div>
                             <h1 className="font-outfit text-5xl md:text-7xl font-bold mb-8 leading-tight">
-                                Gana tiempo <br />
-                                <span className="text-neon-orange neon-glow">para lo que importa</span>
+                                Automatización de <br />
+                                <span className="text-neon-orange neon-glow">Oficinas en Soria</span>
                             </h1>
                             <p className="text-text-slate text-lg md:text-xl leading-relaxed mb-10">
                                 Deja de pelearte con Excel y facturas en papel. Automatizamos tus procesos administrativos para que gestiones tu negocio desde cualquier lugar con un solo clic.
@@ -43,7 +43,7 @@ export default function OfficeServiceClient() {
                         >
                             <Image
                                 src="/images/servicios-ofimatica.png"
-                                alt="Automatización de Procesos en Soria"
+                                alt="Soluciones de Ofimática y Automatización de procesos para empresas en Soria - Numancia Digital"
                                 fill
                                 className="object-cover transition-transform duration-700 group-hover:scale-105"
                             />

@@ -51,8 +51,8 @@ export default function ContactoClient() {
                             transition={{ duration: 0.8 }}
                         >
                             <h1 className="font-outfit text-5xl md:text-7xl font-bold mb-8 leading-tight">
-                                Estamos para ti <br />
-                                <span className="text-neon-orange neon-glow">en toda Soria</span>
+                                Tu Agencia Digital <br />
+                                <span className="text-neon-orange neon-glow">Cerca de ti en Soria</span>
                             </h1>
                             <p className="text-text-slate text-lg md:text-xl leading-relaxed mb-12">
                                 ¿Tienes un proyecto en mente o necesitas digitalizar tu negocio? No hay oficina física porque nosotros <span className="font-bold text-white">nos desplazamos a tu comercio en cualquier punto de la provincia</span>.

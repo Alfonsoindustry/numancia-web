@@ -57,8 +57,8 @@ export default function PreciosClient() {
                             animate={{ opacity: 1, y: 0 }}
                             className="font-outfit text-5xl md:text-7xl font-bold mb-6"
                         >
-                            Planes a medida, <br />
-                            <span className="text-neon-orange neon-glow">precios de aquí</span>
+                            Precios Digitales, <br />
+                            <span className="text-neon-orange neon-glow">Compromiso en Soria</span>
                         </motion.h1>
                         <p className="text-text-slate text-lg max-w-2xl mx-auto">
                             Sin letras pequeñas. Tecnología premium a precios adaptados a la realidad de nuestra provincia.

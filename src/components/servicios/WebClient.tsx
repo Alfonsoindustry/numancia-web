@@ -44,7 +44,7 @@ export default function WebServiceClient() {
                         >
                             <Image
                                 src="/images/servicios-web.png"
-                                alt="Diseño Web Profesional en Soria"
+                                alt="Desarrollo de páginas web de alto rendimiento con Next.js en Soria - Numancia Digital"
                                 fill
                                 className="object-cover transition-transform duration-700 group-hover:scale-105"
                             />
