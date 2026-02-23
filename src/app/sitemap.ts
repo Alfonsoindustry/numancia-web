@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = 'https://numancia.digital'
+    const baseUrl = 'https://www.numanciadigital.es'
 
     const routes = [
         '',

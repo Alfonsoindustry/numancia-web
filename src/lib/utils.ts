@@ -33,7 +33,7 @@ export function constructMetadata({
             creator: "@numancia_digital"
         },
         icons,
-        metadataBase: new URL('https://numancia.digital'),
+        metadataBase: new URL('https://www.numanciadigital.es'),
         ...(noIndex && {
             robots: {
                 index: false,
