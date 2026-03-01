@@ -353,7 +353,7 @@ export default function HomeClient() {
                             >
                                 {/* Texto */}
                                 <div className={i % 2 === 1 ? "lg:order-2" : ""}>
-                                    <div className="font-outfit text-7xl font-bold text-neon-orange/15 mb-4 select-none">
+                                    <div className="font-outfit text-7xl font-bold text-neon-orange neon-glow mb-4 select-none">
                                         {step.num}
                                     </div>
                                     <h3 className="font-outfit text-3xl md:text-4xl font-bold mb-6">

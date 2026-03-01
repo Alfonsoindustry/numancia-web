@@ -11,7 +11,7 @@ const plans = [
     {
         name: "Paquete Base",
         price: "900",
-        period: "/pago único",
+        period: "/año",
         desc: "Para el comercio que necesita empezar con fuerza.",
         features: [
             "Página Web (Landing Page de alto rendimiento)",
@@ -27,7 +27,7 @@ const plans = [
     {
         name: "Paquete Premium",
         price: "1.000",
-        period: "/mes",
+        period: "/año",
         desc: "La solución total para dominar el mercado soriano.",
         features: [
             "Web corporativa completa (todas las páginas)",
@@ -68,7 +68,7 @@ const faqs = [
     },
     {
         q: "¿Tengo que firmar permanencia en el Plan Premium?",
-        a: "El plan premium es mensual sin permanencia mínima, aunque recomendamos al menos 3 meses para ver resultados de SEO y redes sociales. Los proyectos de web tienen su propio precio y no están atados al plan mensual."
+        a: "Ambos planes tienen facturación anual. Si en algún momento necesitas pausar o cancelar, hablamos directamente. No creemos en las cláusulas de permanencia abusivas; si nos quedamos contigo es porque estás contento con los resultados."
     },
 ];
 

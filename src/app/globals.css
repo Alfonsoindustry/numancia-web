@@ -1,4 +1,4 @@
-/* Version: 1.0.2 - Force Build */
+/* Version: 1.0.3 - Dark/Light Mode */
 @import "tailwindcss";
 
 @theme {
@@ -13,6 +13,7 @@
   --font-sans: "Inter", var(--font-geist-sans);
 }
 
+/* ─── DARK MODE (default) ─── */
 :root {
   --background: #0A0A0A;
   --foreground: #FFFFFF;
@@ -41,7 +42,6 @@ body {
 
 .neon-border-intense {
   border: 3px solid #FFFFFF;
-  /* Núcleo blanco para efecto tubo real */
   box-shadow:
     0 0 5px #FF8A00,
     0 0 15px #FF8A00,
@@ -55,4 +55,60 @@ body {
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* ─── LIGHT MODE (detección automática del sistema) ─── */
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: #ffffff;
+    --foreground: #111111;
+  }
+
+  body {
+    background-color: #ffffff;
+    color: #111111;
+  }
+
+  /* Fondos de página */
+  .bg-\[\#0A0A0A\] { background-color: #f5f5f5 !important; }
+
+  /* Glass — invertido para fondo claro */
+  .glass {
+    background: rgba(0, 0, 0, 0.025) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(0, 0, 0, 0.09) !important;
+  }
+
+  /* ── Texto blanco → oscuro ── */
+  .text-white          { color: #111111 !important; }
+  .text-white\/80      { color: rgba(17, 17, 17, 0.85) !important; }
+  .text-white\/75      { color: rgba(17, 17, 17, 0.80) !important; }
+  .text-white\/70      { color: rgba(17, 17, 17, 0.75) !important; }
+  .text-white\/40      { color: rgba(17, 17, 17, 0.45) !important; }
+  .text-white\/30      { color: rgba(17, 17, 17, 0.35) !important; }
+  .text-white\/20      { color: rgba(17, 17, 17, 0.25) !important; }
+  .text-white\/15      { color: rgba(17, 17, 17, 0.20) !important; }
+  .text-white\/10      { color: rgba(17, 17, 17, 0.12) !important; }
+
+  /* Texto slate — más oscuro para contraste */
+  .text-text-slate { color: #555555 !important; }
+
+  /* ── Bordes ── */
+  .border-white\/5  { border-color: rgba(0, 0, 0, 0.07) !important; }
+  .border-white\/8  { border-color: rgba(0, 0, 0, 0.08) !important; }
+  .border-white\/10 { border-color: rgba(0, 0, 0, 0.10) !important; }
+
+  /* ── Fondos semitransparentes ── */
+  .bg-white\/5         { background-color: rgba(0, 0, 0, 0.04) !important; }
+  .bg-white\/10        { background-color: rgba(0, 0, 0, 0.06) !important; }
+  .bg-white\/\[0\.01\] { background-color: rgba(0, 0, 0, 0.01) !important; }
+  .bg-white\/\[0\.02\] { background-color: rgba(0, 0, 0, 0.02) !important; }
+  .bg-white\/\[0\.03\] { background-color: rgba(0, 0, 0, 0.03) !important; }
+  .bg-white\/\[0\.05\] { background-color: rgba(0, 0, 0, 0.04) !important; }
+
+  /* Glow ajustado para fondo claro */
+  .neon-glow {
+    text-shadow: 0 0 8px rgba(255, 138, 0, 0.45), 0 0 16px rgba(255, 138, 0, 0.25);
+  }
 }
