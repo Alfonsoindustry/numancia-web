@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowLeft, ArrowRight, Clock, Calendar, Tag } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -93,6 +94,24 @@ export default function BlogPostClient({ post }: { post: BlogPost }) {
                         <p className="text-text-slate text-xl leading-relaxed">
                             {post.excerpt}
                         </p>
+                    </motion.div>
+
+                    {/* Foto hero del artículo */}
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.15 }}
+                        className="relative aspect-video w-full overflow-hidden rounded-3xl mb-16"
+                    >
+                        <Image
+                            src={post.image}
+                            alt={post.title}
+                            fill
+                            className="object-cover"
+                            sizes="(max-width: 1024px) 100vw, 896px"
+                            priority
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
                     </motion.div>
 
                     {/* Separador */}

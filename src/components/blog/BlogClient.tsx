@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, Clock, Tag } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -70,21 +71,16 @@ export default function BlogClient() {
                                             Leer artículo <ArrowRight size={18} />
                                         </div>
                                     </div>
-                                    {/* Visual decorativo */}
-                                    <div className="hidden lg:flex items-center justify-center">
-                                        <div className="relative w-full aspect-square max-w-xs">
-                                            <div className="absolute inset-0 bg-neon-orange/10 rounded-3xl blur-[40px]" />
-                                            <div className="relative glass rounded-3xl border border-white/10 p-8 h-full flex flex-col justify-center gap-4">
-                                                <div className="font-outfit text-5xl font-bold text-neon-orange/20">01</div>
-                                                <div className="w-3/4 h-3 rounded-full bg-neon-orange/30" />
-                                                <div className="w-full h-2 rounded-full bg-white/10" />
-                                                <div className="w-4/5 h-2 rounded-full bg-white/8" />
-                                                <div className="w-2/3 h-2 rounded-full bg-white/6" />
-                                                <div className="mt-4 w-28 h-10 rounded-xl bg-neon-orange/20 border border-neon-orange/30 flex items-center justify-center">
-                                                    <span className="text-neon-orange text-xs font-bold">{featured.category}</span>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    {/* Foto del artículo destacado */}
+                                    <div className="hidden lg:block relative w-full aspect-[4/3] rounded-3xl overflow-hidden">
+                                        <Image
+                                            src={featured.image}
+                                            alt={featured.title}
+                                            fill
+                                            className="object-cover group-hover:scale-105 transition-transform duration-700"
+                                            sizes="400px"
+                                        />
+                                        <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
                                     </div>
                                 </div>
                             </div>
@@ -102,8 +98,19 @@ export default function BlogClient() {
                                 transition={{ delay: i * 0.1 }}
                             >
                                 <Link href={`/blog/${post.slug}`} className="group block h-full">
-                                    <div className="glass h-full rounded-3xl border border-white/5 group-hover:border-neon-orange/20 transition-all p-8 flex flex-col relative overflow-hidden">
-                                        <div className="absolute -top-10 -right-10 w-32 h-32 bg-neon-orange/10 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity" />
+                                    <div className="glass h-full rounded-3xl border border-white/5 group-hover:border-neon-orange/20 transition-all flex flex-col relative overflow-hidden">
+                                        {/* Miniatura */}
+                                        <div className="relative aspect-video w-full overflow-hidden">
+                                            <Image
+                                                src={post.image}
+                                                alt={post.title}
+                                                fill
+                                                className="object-cover group-hover:scale-105 transition-transform duration-700"
+                                                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                                            />
+                                            <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+                                        </div>
+                                        <div className="p-8 flex flex-col flex-grow">
                                         <div className="flex items-center gap-3 mb-6">
                                             <span className={`text-xs font-bold px-3 py-1 rounded-full border ${categoryColors[post.category] || "text-neon-orange bg-neon-orange/10 border-neon-orange/20"}`}>
                                                 {post.category}
@@ -124,6 +131,7 @@ export default function BlogClient() {
                                                 Leer <ArrowRight size={14} />
                                             </div>
                                         </div>
+                                        </div>{/* fin padding content */}
                                     </div>
                                 </Link>
                             </motion.div>

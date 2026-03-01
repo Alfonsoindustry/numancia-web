@@ -62,8 +62,8 @@ export default function SobreNosotrosClient() {
                             <div className="absolute inset-0 bg-neon-orange/10 rounded-[3rem] blur-[80px]" />
                             <div className="relative rounded-[3rem] border border-white/10 overflow-hidden shadow-2xl aspect-square">
                                 <Image
-                                    src="/images/sobre-nosotros-v5.png"
-                                    alt="Equipo Numancia Digital, Soria"
+                                    src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=700&q=85&auto=format&fit=crop"
+                                    alt="Equipo Numancia Digital trabajando en Soria"
                                     fill
                                     className="object-cover"
                                     sizes="(max-width: 768px) 100vw, 50vw"

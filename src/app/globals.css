@@ -109,6 +109,8 @@ body {
   .text-white\/80      { color: rgba(17, 17, 17, 0.85) !important; }
   .text-white\/75      { color: rgba(17, 17, 17, 0.80) !important; }
   .text-white\/70      { color: rgba(17, 17, 17, 0.75) !important; }
+  .text-white\/60      { color: rgba(17, 17, 17, 0.65) !important; }
+  .text-white\/50      { color: rgba(17, 17, 17, 0.55) !important; }
   .text-white\/40      { color: rgba(17, 17, 17, 0.45) !important; }
   .text-white\/30      { color: rgba(17, 17, 17, 0.35) !important; }
   .text-white\/20      { color: rgba(17, 17, 17, 0.25) !important; }

@@ -5,6 +5,7 @@ export interface BlogPost {
     date: string;
     category: string;
     readTime: string;
+    image: string;
     content: string;
 }
 
@@ -16,6 +17,7 @@ export const blogPosts: BlogPost[] = [
         date: "28 febrero 2025",
         category: "Diseño Web",
         readTime: "6 min",
+        image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80&auto=format&fit=crop",
         content: `
 ## El cliente soriano busca online antes de entrar por la puerta
 
@@ -81,6 +83,7 @@ Sin compromiso. Solo valor real.
         date: "15 febrero 2025",
         category: "SEO Local",
         readTime: "8 min",
+        image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&q=80&auto=format&fit=crop",
         content: `
 ## Qué es el SEO local y por qué es diferente al SEO normal
 
@@ -181,6 +184,7 @@ Solicítala sin ningún compromiso.
         date: "5 febrero 2025",
         category: "Redes Sociales",
         readTime: "7 min",
+        image: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=800&q=80&auto=format&fit=crop",
         content: `
 ## El error más común en redes sociales del comercio soriano
 
@@ -282,6 +286,7 @@ Si tus redes sociales llevan tiempo sin actividad o simplemente no estás viendo
         date: "22 enero 2025",
         category: "Automatización",
         readTime: "6 min",
+        image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80&auto=format&fit=crop",
         content: `
 ## El tiempo que pierdes sin saberlo
 
@@ -368,6 +373,7 @@ Sin jerga técnica. Sin venderte lo que no necesitas. Solo soluciones concretas 
         date: "10 enero 2025",
         category: "Diseño Web",
         readTime: "5 min",
+        image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&q=80&auto=format&fit=crop",
         content: `
 ## El mito del "diseño bonito"
 
@@ -449,6 +455,7 @@ En 48 horas tienes un informe detallado con las mejoras más impactantes, ordena
         date: "3 enero 2025",
         category: "SEO Local",
         readTime: "7 min",
+        image: "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=800&q=80&auto=format&fit=crop",
         content: `
 ## Por qué Google Maps es tu mejor aliado en Soria
 
