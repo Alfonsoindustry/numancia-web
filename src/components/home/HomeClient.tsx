@@ -192,6 +192,12 @@ const testimonials = [
     },
 ];
 
+const marqueeItems = [
+    "Diseño Web", "SEO Local", "Redes Sociales", "Automatización",
+    "Next.js 15", "Soria, España", "Tecnología Km 0", "Agencia Digital",
+    "Google Maps", "E-Commerce", "Facturación", "Posicionamiento",
+];
+
 export default function HomeClient() {
     return (
         <div className="relative min-h-screen bg-[#0A0A0A] overflow-hidden selection:bg-neon-orange/30 selection:text-neon-orange">
@@ -202,7 +208,7 @@ export default function HomeClient() {
             <Navbar />
 
             {/* ─────────────── HERO ─────────────── */}
-            <section className="relative pt-48 pb-20 px-6 z-10">
+            <section className="relative pt-48 pb-20 px-6 z-10 hero-grid">
                 <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
                     <motion.div
                         initial={{ opacity: 0, x: -30 }}
@@ -237,7 +243,7 @@ export default function HomeClient() {
                         </div>
                     </motion.div>
 
-                    {/* Logo hero */}
+                    {/* Logo hero con badges flotantes */}
                     <motion.div
                         initial={{ opacity: 0, scale: 0.85 }}
                         animate={{ opacity: 1, scale: 1 }}
@@ -245,17 +251,68 @@ export default function HomeClient() {
                         className="relative flex items-center justify-center"
                     >
                         <div className="absolute inset-0 bg-neon-orange/15 rounded-full blur-[100px] scale-75" />
+
+                        {/* Badge: disponibilidad */}
+                        <motion.div
+                            initial={{ opacity: 0, x: -20 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ delay: 0.8 }}
+                            className="absolute top-4 -left-4 glass rounded-2xl px-4 py-3 border border-white/10 z-10 hidden sm:block"
+                        >
+                            <div className="flex items-center gap-2 text-xs font-bold">
+                                <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
+                                Disponibles en Soria
+                            </div>
+                        </motion.div>
+
+                        {/* Badge: valoraciones */}
+                        <motion.div
+                            initial={{ opacity: 0, x: 20 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ delay: 1.0 }}
+                            className="absolute bottom-4 -right-4 glass rounded-2xl px-4 py-3 border border-white/10 z-10 hidden sm:block"
+                        >
+                            <div className="flex gap-0.5 mb-1">
+                                {[...Array(5)].map((_, i) => (
+                                    <Star key={i} size={12} className="text-neon-orange fill-neon-orange" />
+                                ))}
+                            </div>
+                            <div className="text-xs text-text-slate">Agencia de confianza</div>
+                        </motion.div>
+
+                        {/* Badge: 48h */}
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: 1.2 }}
+                            className="absolute -bottom-4 left-1/2 -translate-x-1/2 glass rounded-2xl px-4 py-3 border border-neon-orange/20 z-10 hidden sm:block"
+                        >
+                            <div className="text-neon-orange font-outfit font-bold text-sm">Web en 48h</div>
+                        </motion.div>
+
                         <Image
                             src="/brand/logo_web_512x512.png"
                             alt="Numancia Digital"
                             width={512}
                             height={512}
-                            className="relative w-full max-w-[420px] mx-auto drop-shadow-[0_0_60px_rgba(255,138,0,0.35)] select-none"
+                            className="relative w-full max-w-[380px] mx-auto drop-shadow-[0_0_60px_rgba(255,138,0,0.35)] select-none"
                             priority
                         />
                     </motion.div>
                 </div>
             </section>
+
+            {/* ─────────────── TICKER ─────────────── */}
+            <div className="border-y border-white/5 py-4 overflow-hidden relative z-10">
+                <div className="animate-marquee flex gap-10 whitespace-nowrap">
+                    {[...marqueeItems, ...marqueeItems].map((item, i) => (
+                        <span key={i} className="flex items-center gap-3 text-xs font-bold text-text-slate uppercase tracking-widest">
+                            <span className="text-neon-orange text-base">✦</span>
+                            {item}
+                        </span>
+                    ))}
+                </div>
+            </div>
 
             {/* ─────────────── MÉTRICAS ─────────────── */}
             <section className="py-16 px-6 relative z-10">

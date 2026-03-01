@@ -68,6 +68,48 @@ export const metadata: Metadata = {
   },
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Numancia Digital",
+  "description": "Agencia de digitalización en Soria. Diseño Web, SEO Local, Redes Sociales y Automatización para pymes y comercios de la provincia de Soria.",
+  "url": "https://www.numanciadigital.es",
+  "telephone": "+34671883656",
+  "email": "buzon@numanciadigital.es",
+  "image": "https://www.numanciadigital.es/brand/logo_web_512x512.png",
+  "logo": "https://www.numanciadigital.es/brand/logo_web_512x512.png",
+  "priceRange": "€€",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Soria",
+    "addressRegion": "Castilla y León",
+    "postalCode": "42001",
+    "addressCountry": "ES"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 41.7643,
+    "longitude": -2.4638
+  },
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "Provincia de Soria"
+  },
+  "sameAs": [
+    "https://www.instagram.com/numancia.digital"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Servicios Digitales para pymes en Soria",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Diseño Web en Soria" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "SEO Local en Soria" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Gestión de Redes Sociales en Soria" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Automatización y Ofimática para pymes" } }
+    ]
+  }
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -75,9 +117,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es" className="scroll-smooth">
-      <body
-        className={`${inter.variable} ${outfit.variable} font-sans antialiased bg-[#0A0A0A] text-white`}
-      >
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
+      <body className={`${inter.variable} ${outfit.variable} font-sans antialiased`}>
         {children}
         <CookieBanner />
         <WhatsAppButton />

@@ -45,7 +45,7 @@ export default function Navbar() {
                 {/* Desktop Menu */}
                 <div className="hidden md:flex items-center gap-8 text-sm font-medium text-text-slate">
                     {navLinks.map((link) => (
-                        <Link key={link.href} href={link.href} className="hover:text-white transition-colors py-2">
+                        <Link key={link.href} href={link.href} className="hover:text-neon-orange transition-colors py-2">
                             {link.label}
                         </Link>
                     ))}
