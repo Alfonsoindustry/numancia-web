@@ -76,6 +76,16 @@ body {
   animation-play-state: paused;
 }
 
+/* ─── Floating orbs ─── */
+@keyframes float-orb {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33%       { transform: translate(28px, -18px) scale(1.07); }
+  66%       { transform: translate(-14px, 14px) scale(0.95); }
+}
+.orb-1 { animation: float-orb 14s ease-in-out infinite; }
+.orb-2 { animation: float-orb 18s ease-in-out infinite; animation-delay: -6s; animation-direction: reverse; }
+.orb-3 { animation: float-orb 22s ease-in-out infinite; animation-delay: -12s; }
+
 /* ─── LIGHT MODE (detección automática del sistema operativo) ─── */
 @media (prefers-color-scheme: light) {
   :root {

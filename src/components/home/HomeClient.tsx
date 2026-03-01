@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ArrowRight, CheckCircle2, Globe, Search, Instagram, Zap, Star } from "lucide-react";
+import { ArrowRight, CheckCircle2, Globe, Search, Instagram, Zap, Star, ChevronDown } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -201,9 +201,10 @@ const marqueeItems = [
 export default function HomeClient() {
     return (
         <div className="relative min-h-screen bg-[#0A0A0A] overflow-hidden selection:bg-neon-orange/30 selection:text-neon-orange">
-            {/* Luces de fondo */}
-            <div className="absolute top-0 -left-4 w-96 h-96 bg-neon-orange/10 rounded-full blur-[120px] pointer-events-none" />
-            <div className="absolute bottom-0 -right-4 w-96 h-96 bg-neon-orange/5 rounded-full blur-[120px] pointer-events-none" />
+            {/* Luces de fondo animadas */}
+            <div className="orb-1 absolute top-0 -left-20 w-[650px] h-[650px] bg-neon-orange/10 rounded-full blur-[150px] pointer-events-none" />
+            <div className="orb-2 absolute bottom-0 -right-20 w-[550px] h-[550px] bg-neon-orange/5 rounded-full blur-[130px] pointer-events-none" />
+            <div className="orb-3 absolute top-1/2 left-1/3 w-80 h-80 bg-secondary-orange/5 rounded-full blur-[100px] pointer-events-none" />
 
             <Navbar />
 
@@ -230,16 +231,22 @@ export default function HomeClient() {
                         <div className="flex flex-col sm:flex-row gap-4">
                             <Link
                                 href="/contacto"
-                                className="flex items-center justify-center gap-2 bg-neon-orange text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-secondary-orange transition-all neon-border active:scale-95 text-center shadow-[0_0_30px_rgba(255,138,0,0.3)]"
+                                className="flex items-center justify-center gap-2 bg-neon-orange text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-secondary-orange hover:scale-105 transition-all neon-border active:scale-95 text-center shadow-[0_0_30px_rgba(255,138,0,0.35)]"
                             >
                                 Auditoría Gratuita <ArrowRight size={20} />
                             </Link>
                             <Link
                                 href="/servicios"
-                                className="flex items-center justify-center gap-2 glass text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white/10 transition-all active:scale-95 text-center border border-white/10"
+                                className="flex items-center justify-center gap-2 glass text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white/10 hover:border-white/20 transition-all active:scale-95 text-center border border-white/10"
                             >
                                 Ver servicios
                             </Link>
+                        </div>
+                        {/* Indicadores de confianza */}
+                        <div className="flex flex-wrap gap-x-6 gap-y-2 mt-8 text-sm text-text-slate">
+                            <span className="flex items-center gap-2"><CheckCircle2 size={14} className="text-neon-orange" /> Sin permanencia</span>
+                            <span className="flex items-center gap-2"><CheckCircle2 size={14} className="text-neon-orange" /> Web en 48h</span>
+                            <span className="flex items-center gap-2"><CheckCircle2 size={14} className="text-neon-orange" /> Auditoría 0€</span>
                         </div>
                     </motion.div>
 
@@ -300,6 +307,16 @@ export default function HomeClient() {
                         />
                     </motion.div>
                 </div>
+
+                {/* Scroll indicator */}
+                <motion.div
+                    animate={{ y: [0, 8, 0] }}
+                    transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut" }}
+                    className="absolute bottom-10 left-1/2 -translate-x-1/2 hidden lg:flex flex-col items-center gap-1.5 text-white/20 cursor-default select-none"
+                >
+                    <span className="text-[10px] uppercase tracking-[0.2em]">Scroll</span>
+                    <ChevronDown size={16} />
+                </motion.div>
             </section>
 
             {/* ─────────────── TICKER ─────────────── */}
@@ -325,8 +342,9 @@ export default function HomeClient() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: i * 0.1 }}
-                            className="text-center"
+                            className="text-center glass p-8 rounded-2xl border border-white/5 hover:border-neon-orange/25 transition-all group"
                         >
+                            <div className="w-8 h-[2px] bg-neon-orange/40 mx-auto mb-5 group-hover:w-16 transition-all duration-700 rounded-full" />
                             <div className="font-outfit text-4xl md:text-5xl font-bold text-neon-orange neon-glow mb-2">
                                 {m.value}
                             </div>
@@ -364,6 +382,9 @@ export default function HomeClient() {
                                     className="glass h-full p-6 rounded-3xl border border-white/5 group-hover:border-neon-orange/30 group-hover:bg-white/[0.05] transition-all relative overflow-hidden flex flex-col"
                                 >
                                     <div className="absolute -top-10 -right-10 w-32 h-32 bg-neon-orange/15 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity" />
+                                    <div className="absolute top-5 right-5 font-outfit text-2xl font-bold text-neon-orange/12 group-hover:text-neon-orange/25 transition-colors select-none">
+                                        {String(i + 1).padStart(2, "0")}
+                                    </div>
                                     {/* SVG Ilustrativo */}
                                     <div className="w-full h-24 mb-6 opacity-70 group-hover:opacity-100 transition-opacity">
                                         {s.svg}
@@ -513,8 +534,10 @@ export default function HomeClient() {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ delay: i * 0.15 }}
-                                className="glass p-8 rounded-3xl border border-white/5 hover:border-neon-orange/20 transition-all"
+                                className="glass p-8 rounded-3xl border border-white/5 hover:border-neon-orange/20 transition-all relative overflow-hidden"
                             >
+                                <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-neon-orange/30 to-transparent" />
+                                <div className="text-neon-orange/15 font-outfit font-bold text-7xl leading-none mb-2 -ml-1 select-none">"</div>
                                 <div className="flex gap-1 mb-6">
                                     {[...Array(5)].map((_, s) => (
                                         <Star key={s} size={16} className={s < t.stars ? "text-neon-orange fill-neon-orange" : "text-white/15 fill-white/10"} />
@@ -539,15 +562,22 @@ export default function HomeClient() {
                     <div className="absolute -bottom-20 -left-20 w-64 h-64 bg-neon-orange/10 rounded-full blur-[100px] pointer-events-none" />
                     <div className="absolute -top-20 -right-20 w-64 h-64 bg-neon-orange/10 rounded-full blur-[100px] pointer-events-none" />
                     <h2 className="font-outfit text-4xl md:text-5xl font-bold mb-6">¿Preparado para el salto?</h2>
-                    <p className="text-text-slate text-lg mb-10">
-                        Ofrecemos una auditoría digital gratuita para los próximos negocios de Soria.
+                    <p className="text-text-slate text-lg mb-8">
+                        Auditoría digital gratuita para los próximos negocios de Soria.
                         Sin compromiso, solo valor real.
                     </p>
+                    <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mb-10">
+                        {["Análisis SEO completo", "Revisión presencia Google", "Plan de acción concreto", "100% gratuito"].map((item, i) => (
+                            <span key={i} className="flex items-center gap-2 text-sm text-white/60">
+                                <CheckCircle2 size={14} className="text-neon-orange shrink-0" /> {item}
+                            </span>
+                        ))}
+                    </div>
                     <Link
                         href="/contacto"
-                        className="inline-block bg-neon-orange text-white px-10 py-5 rounded-2xl font-bold text-xl hover:bg-secondary-orange transition-all neon-border active:scale-95 shadow-[0_0_30px_rgba(255,138,0,0.3)]"
+                        className="inline-flex items-center gap-2 bg-neon-orange text-white px-10 py-5 rounded-2xl font-bold text-xl hover:bg-secondary-orange hover:scale-105 transition-all neon-border active:scale-95 shadow-[0_0_30px_rgba(255,138,0,0.3)]"
                     >
-                        Solicitar Auditoría Gratis
+                        Solicitar Auditoría Gratis <ArrowRight size={22} />
                     </Link>
                 </div>
             </section>
