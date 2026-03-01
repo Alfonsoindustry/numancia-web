@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowRight, CheckCircle2, Globe, Search, Instagram, Zap, Star } from "lucide-react";
 import Navbar from "@/components/Navbar";
@@ -174,26 +175,26 @@ const testimonials = [
     {
         initials: "MG",
         name: "María G.",
-        business: "Carnicería El Duero, Soria",
+        stars: 5,
         text: "Pasé de no tener web a tener clientes que me llegan por Google. En menos de una semana. No me lo creía hasta que lo vi.",
     },
     {
         initials: "RM",
         name: "Roberto M.",
-        business: "Hostal La Numantina, Soria",
+        stars: 5,
         text: "La mejor inversión del año. Por lo que antes pagaba en publicidad en una tarde, ahora tengo una web entera funcionando.",
     },
     {
         initials: "LP",
         name: "Laura P.",
-        business: "Farmacia Centro, Soria",
-        text: "Profesionales de verdad. Saben de tecnología y también entienden lo que necesita un negocio pequeño en una ciudad como Soria.",
+        stars: 4,
+        text: "Muy buena experiencia. El proceso fue rápido y el resultado final es exactamente lo que buscaba para mi negocio.",
     },
 ];
 
 export default function HomeClient() {
     return (
-        <div className="relative min-h-screen bg-[#0B1120] overflow-hidden selection:bg-neon-orange/30 selection:text-neon-orange">
+        <div className="relative min-h-screen bg-[#0A0A0A] overflow-hidden selection:bg-neon-orange/30 selection:text-neon-orange">
             {/* Luces de fondo */}
             <div className="absolute top-0 -left-4 w-96 h-96 bg-neon-orange/10 rounded-full blur-[120px] pointer-events-none" />
             <div className="absolute bottom-0 -right-4 w-96 h-96 bg-neon-orange/5 rounded-full blur-[120px] pointer-events-none" />
@@ -236,52 +237,22 @@ export default function HomeClient() {
                         </div>
                     </motion.div>
 
-                    {/* Mockup browser animado */}
+                    {/* Logo hero */}
                     <motion.div
-                        initial={{ opacity: 0, scale: 0.9 }}
+                        initial={{ opacity: 0, scale: 0.85 }}
                         animate={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 1, delay: 0.2 }}
-                        className="relative"
+                        transition={{ duration: 1.2, ease: "easeOut", delay: 0.2 }}
+                        className="relative flex items-center justify-center"
                     >
-                        <div className="absolute inset-0 bg-neon-orange/10 rounded-3xl blur-[60px]" />
-                        <div className="relative glass rounded-3xl border border-white/10 overflow-hidden shadow-2xl">
-                            {/* Barra del browser */}
-                            <div className="flex items-center gap-2 px-5 py-4 bg-white/5 border-b border-white/5">
-                                <span className="w-3 h-3 rounded-full bg-red-400/70" />
-                                <span className="w-3 h-3 rounded-full bg-yellow-400/70" />
-                                <span className="w-3 h-3 rounded-full bg-green-400/70" />
-                                <div className="flex-1 mx-4 bg-white/5 rounded-full px-4 py-1.5 text-xs text-white/30 font-mono">
-                                    numanciadigital.es
-                                </div>
-                            </div>
-                            {/* Contenido de la web simulada */}
-                            <div className="p-6 space-y-4">
-                                <div className="flex items-center gap-3 mb-6">
-                                    <div className="w-8 h-8 rounded-lg bg-neon-orange/30" />
-                                    <div className="w-32 h-3 rounded-full bg-white/10" />
-                                </div>
-                                <div className="w-3/4 h-5 rounded-full bg-neon-orange/20" />
-                                <div className="w-1/2 h-4 rounded-full bg-white/10" />
-                                <div className="w-2/3 h-3 rounded-full bg-white/6" />
-                                <div className="flex gap-3 mt-6">
-                                    <div className="px-6 py-3 rounded-xl bg-neon-orange/70 text-white text-xs font-bold">Comenzar</div>
-                                    <div className="px-6 py-3 rounded-xl bg-white/5 text-white/40 text-xs border border-white/8">Servicios</div>
-                                </div>
-                                <div className="grid grid-cols-4 gap-3 mt-6">
-                                    {[0.6, 0.4, 0.5, 0.3].map((op, i) => (
-                                        <div key={i} className="rounded-2xl p-3 border border-white/5 bg-white/[0.02]">
-                                            <div className="w-6 h-6 rounded-lg mb-2" style={{ background: `rgba(255,138,0,${op})` }} />
-                                            <div className="w-full h-2 rounded-full bg-white/10 mb-1" />
-                                            <div className="w-3/4 h-2 rounded-full bg-white/5" />
-                                        </div>
-                                    ))}
-                                </div>
-                                <div className="w-full h-10 rounded-xl bg-neon-orange/8 border border-neon-orange/15 flex items-center px-4 gap-2">
-                                    <div className="w-2 h-2 rounded-full bg-neon-orange animate-pulse" />
-                                    <div className="w-48 h-2 rounded-full bg-white/10" />
-                                </div>
-                            </div>
-                        </div>
+                        <div className="absolute inset-0 bg-neon-orange/15 rounded-full blur-[100px] scale-75" />
+                        <Image
+                            src="/brand/logo_web_512x512.png"
+                            alt="Numancia Digital"
+                            width={512}
+                            height={512}
+                            className="relative w-full max-w-[420px] mx-auto drop-shadow-[0_0_60px_rgba(255,138,0,0.35)] select-none"
+                            priority
+                        />
                     </motion.div>
                 </div>
             </section>
@@ -489,7 +460,7 @@ export default function HomeClient() {
                             >
                                 <div className="flex gap-1 mb-6">
                                     {[...Array(5)].map((_, s) => (
-                                        <Star key={s} size={16} className="text-neon-orange fill-neon-orange" />
+                                        <Star key={s} size={16} className={s < t.stars ? "text-neon-orange fill-neon-orange" : "text-white/15 fill-white/10"} />
                                     ))}
                                 </div>
                                 <p className="text-white/80 leading-relaxed mb-8 italic">"{t.text}"</p>
@@ -497,10 +468,7 @@ export default function HomeClient() {
                                     <div className="w-12 h-12 rounded-full bg-neon-orange/20 border border-neon-orange/30 flex items-center justify-center font-outfit font-bold text-neon-orange">
                                         {t.initials}
                                     </div>
-                                    <div>
-                                        <div className="font-bold text-white">{t.name}</div>
-                                        <div className="text-text-slate text-sm">{t.business}</div>
-                                    </div>
+                                    <div className="font-bold text-white">{t.name}</div>
                                 </div>
                             </motion.div>
                         ))}

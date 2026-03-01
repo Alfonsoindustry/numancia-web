@@ -1,48 +1,12 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Link from "next/link";
 import { CheckCircle2, Rocket, Heart, Shield, ArrowRight, MapPin, Code2, TrendingUp } from "lucide-react";
 
-const SoriaIllustration = () => (
-    <svg viewBox="0 0 440 440" className="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg">
-        {/* Silueta montañas de Soria */}
-        <polygon points="0,320 80,180 160,260 240,120 320,200 400,80 440,140 440,440 0,440"
-            fill="#FF8A00" fillOpacity="0.06" stroke="#FF8A00" strokeWidth="1" strokeOpacity="0.2" />
-        {/* Castillo de Soria (simplificado) */}
-        <rect x="170" y="220" width="100" height="80" rx="4" fill="#FF8A00" fillOpacity="0.1" stroke="#FF8A00" strokeWidth="1.5" strokeOpacity="0.4" />
-        <rect x="170" y="210" width="20" height="20" rx="2" fill="#FF8A00" fillOpacity="0.2" stroke="#FF8A00" strokeWidth="1" strokeOpacity="0.4" />
-        <rect x="250" y="210" width="20" height="20" rx="2" fill="#FF8A00" fillOpacity="0.2" stroke="#FF8A00" strokeWidth="1" strokeOpacity="0.4" />
-        <rect x="207" y="200" width="26" height="25" rx="2" fill="#FF8A00" fillOpacity="0.25" stroke="#FF8A00" strokeWidth="1.5" strokeOpacity="0.5" />
-        <rect x="215" y="255" width="10" height="20" rx="2" fill="#FF8A00" fillOpacity="0.4" />
-        <rect x="230" y="255" width="10" height="20" rx="2" fill="#FF8A00" fillOpacity="0.3" />
-        <rect x="245" y="255" width="10" height="20" rx="2" fill="#FF8A00" fillOpacity="0.2" />
-        <rect x="168" y="298" width="104" height="4" rx="2" fill="#FF8A00" fillOpacity="0.3" />
-        {/* Circuitos digitales sobreimpresos */}
-        <circle cx="220" cy="200" r="80" stroke="#FF8A00" strokeWidth="0.5" strokeOpacity="0.15" strokeDasharray="5 8" />
-        <circle cx="220" cy="200" r="130" stroke="#FF8A00" strokeWidth="0.5" strokeOpacity="0.1" strokeDasharray="3 12" />
-        <circle cx="220" cy="200" r="180" stroke="#FF8A00" strokeWidth="0.5" strokeOpacity="0.07" strokeDasharray="2 16" />
-        {/* Nodos de conexión */}
-        {[
-            [100, 120], [340, 150], [80, 300], [360, 280], [200, 80], [240, 370]
-        ].map(([x, y], i) => (
-            <g key={i}>
-                <circle cx={x} cy={y} r="4" fill="#FF8A00" fillOpacity="0.6" />
-                <circle cx={x} cy={y} r="8" fill="#FF8A00" fillOpacity="0.1" stroke="#FF8A00" strokeWidth="0.5" strokeOpacity="0.4" />
-                <line x1={x} y1={y} x2="220" y2="200" stroke="#FF8A00" strokeWidth="0.5" strokeOpacity="0.2" strokeDasharray="4 6" />
-            </g>
-        ))}
-        {/* Pin de ubicación */}
-        <circle cx="220" cy="200" r="12" fill="#FF8A00" fillOpacity="0.9" />
-        <circle cx="220" cy="200" r="5" fill="white" fillOpacity="0.9" />
-        <path d="M220 212 L220 230" stroke="#FF8A00" strokeWidth="2" strokeOpacity="0.7" strokeLinecap="round" />
-        {/* Label Soria */}
-        <rect x="228" y="194" width="48" height="20" rx="6" fill="#FF8A00" fillOpacity="0.2" stroke="#FF8A00" strokeWidth="0.8" strokeOpacity="0.5" />
-        <text x="252" y="207" textAnchor="middle" fill="#FF8A00" fontSize="9" fontFamily="sans-serif" fontWeight="bold">SORIA</text>
-    </svg>
-);
 
 const valores = [
     { title: "Estrategia Local", desc: "Dominamos el SEO en Soria y el mercado de la provincia. Tu negocio no solo estará online, estará delante de tus clientes potenciales.", icon: MapPin },
@@ -59,7 +23,7 @@ const timeline = [
 
 export default function SobreNosotrosClient() {
     return (
-        <div className="min-h-screen bg-[#0B1120] text-white selection:bg-neon-orange/30 selection:text-neon-orange">
+        <div className="min-h-screen bg-[#0A0A0A] text-white selection:bg-neon-orange/30 selection:text-neon-orange">
             <Navbar />
 
             <main className="pt-32 pb-20">
@@ -95,9 +59,15 @@ export default function SobreNosotrosClient() {
                         </motion.div>
 
                         <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 1 }} className="relative">
-                            <div className="absolute inset-0 bg-neon-orange/8 rounded-[3rem] blur-[60px]" />
-                            <div className="relative glass rounded-[3rem] border border-white/10 overflow-hidden shadow-2xl aspect-square flex items-center justify-center p-8">
-                                <SoriaIllustration />
+                            <div className="absolute inset-0 bg-neon-orange/10 rounded-[3rem] blur-[80px]" />
+                            <div className="relative rounded-[3rem] border border-white/10 overflow-hidden shadow-2xl aspect-square">
+                                <Image
+                                    src="/images/sobre-nosotros-v5.png"
+                                    alt="Equipo Numancia Digital, Soria"
+                                    fill
+                                    className="object-cover"
+                                    sizes="(max-width: 768px) 100vw, 50vw"
+                                />
                             </div>
                         </motion.div>
                     </div>

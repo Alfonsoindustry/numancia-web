@@ -69,7 +69,7 @@ export default function Navbar() {
                             initial={{ opacity: 0, y: -20 }}
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0, y: -20 }}
-                            className="fixed inset-0 bg-[#0B1120] pt-32 px-6 flex flex-col gap-8 md:hidden h-screen"
+                            className="fixed inset-0 bg-[#0A0A0A] pt-32 px-6 flex flex-col gap-8 md:hidden h-screen"
                         >
                             <div className="flex flex-col gap-6 items-center">
                                 {navLinks.map((link) => (

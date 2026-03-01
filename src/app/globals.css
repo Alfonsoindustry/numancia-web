@@ -2,10 +2,10 @@
 @import "tailwindcss";
 
 @theme {
-  --color-background: #0B1120;
+  --color-background: #0A0A0A;
   --color-foreground: #FFFFFF;
 
-  --color-oxford-blue: #0B1120;
+  --color-oxford-blue: #0A0A0A;
   --color-neon-orange: #FF8A00;
   --color-secondary-orange: #FF4D00;
   --color-text-slate: #94A3B8;
@@ -14,7 +14,7 @@
 }
 
 :root {
-  --background: #0B1120;
+  --background: #0A0A0A;
   --foreground: #FFFFFF;
 }
 

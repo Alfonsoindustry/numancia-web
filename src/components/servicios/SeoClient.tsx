@@ -9,7 +9,7 @@ import Link from "next/link";
 const SeoIllustration = () => (
     <svg viewBox="0 0 500 340" className="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg">
         {/* Google SERP simulado */}
-        <rect x="10" y="10" width="480" height="320" rx="16" stroke="#FF8A00" strokeWidth="1" strokeOpacity="0.2" fill="#0B1120" />
+        <rect x="10" y="10" width="480" height="320" rx="16" stroke="#FF8A00" strokeWidth="1" strokeOpacity="0.2" fill="#0A0A0A" />
         {/* Barra de búsqueda */}
         <rect x="30" y="24" width="440" height="36" rx="18" fill="white" fillOpacity="0.05" stroke="white" strokeWidth="0.8" strokeOpacity="0.1" />
         <circle cx="54" cy="42" r="8" stroke="#FF8A00" strokeWidth="1.5" strokeOpacity="0.5" />
@@ -56,7 +56,7 @@ const features = [
 
 export default function SeoServiceClient() {
     return (
-        <div className="min-h-screen bg-[#0B1120] text-white selection:bg-neon-orange/30 selection:text-neon-orange">
+        <div className="min-h-screen bg-[#0A0A0A] text-white selection:bg-neon-orange/30 selection:text-neon-orange">
             <Navbar />
             <main className="pt-32 pb-20 px-6">
                 <div className="max-w-7xl mx-auto">

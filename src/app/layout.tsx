@@ -76,7 +76,7 @@ export default function RootLayout({
   return (
     <html lang="es" className="scroll-smooth">
       <body
-        className={`${inter.variable} ${outfit.variable} font-sans antialiased bg-[#0B1120] text-white`}
+        className={`${inter.variable} ${outfit.variable} font-sans antialiased bg-[#0A0A0A] text-white`}
       >
         {children}
         <CookieBanner />

@@ -38,7 +38,7 @@ export default function ContactoClient() {
     };
 
     return (
-        <div className="min-h-screen bg-[#0B1120] text-white selection:bg-neon-orange/30 selection:text-neon-orange">
+        <div className="min-h-screen bg-[#0A0A0A] text-white selection:bg-neon-orange/30 selection:text-neon-orange">
             <Navbar />
 
             <main className="pt-32 pb-20 px-6">
@@ -143,10 +143,10 @@ export default function ContactoClient() {
                                         onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
                                         className="w-full bg-white/5 border border-white/10 rounded-xl px-5 py-4 focus:outline-none focus:border-neon-orange/50 transition-all appearance-none"
                                     >
-                                        <option className="bg-[#0B1120]">Diseño Web</option>
-                                        <option className="bg-[#0B1120]">SEO Local</option>
-                                        <option className="bg-[#0B1120]">Redes Sociales</option>
-                                        <option className="bg-[#0B1120]">Otros / Auditoría Gratis</option>
+                                        <option className="bg-[#0A0A0A]">Diseño Web</option>
+                                        <option className="bg-[#0A0A0A]">SEO Local</option>
+                                        <option className="bg-[#0A0A0A]">Redes Sociales</option>
+                                        <option className="bg-[#0A0A0A]">Otros / Auditoría Gratis</option>
                                     </select>
                                 </div>
                                 <div className="space-y-2">

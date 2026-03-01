@@ -101,7 +101,7 @@ function FaqItem({ q, a }: { q: string; a: string }) {
 
 export default function PreciosClient() {
     return (
-        <div className="min-h-screen bg-[#0B1120] text-white selection:bg-neon-orange/30 selection:text-neon-orange">
+        <div className="min-h-screen bg-[#0A0A0A] text-white selection:bg-neon-orange/30 selection:text-neon-orange">
             <Navbar />
 
             <main className="pt-32 pb-20 px-6">

@@ -11,7 +11,7 @@ const BrowserIllustration = () => (
         {/* Shadow */}
         <ellipse cx="250" cy="330" rx="200" ry="10" fill="#FF8A00" fillOpacity="0.08" />
         {/* Browser frame */}
-        <rect x="10" y="10" width="480" height="310" rx="16" stroke="#FF8A00" strokeWidth="1.5" strokeOpacity="0.35" fill="#0B1120" />
+        <rect x="10" y="10" width="480" height="310" rx="16" stroke="#FF8A00" strokeWidth="1.5" strokeOpacity="0.35" fill="#0A0A0A" />
         <rect x="10" y="10" width="480" height="48" rx="16" fill="#FF8A00" fillOpacity="0.06" />
         {/* Traffic lights */}
         <circle cx="36" cy="34" r="7" fill="#FF4D00" fillOpacity="0.7" />
@@ -64,7 +64,7 @@ const process = [
 
 export default function WebServiceClient() {
     return (
-        <div className="min-h-screen bg-[#0B1120] text-white selection:bg-neon-orange/30 selection:text-neon-orange">
+        <div className="min-h-screen bg-[#0A0A0A] text-white selection:bg-neon-orange/30 selection:text-neon-orange">
             <Navbar />
             <main className="pt-32 pb-20 px-6">
                 <div className="max-w-7xl mx-auto">
