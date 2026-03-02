@@ -304,8 +304,8 @@ export default function PreciosClient() {
                         transition={{ duration: 0.6 }}
                         className="mb-28"
                     >
-                        <h2 className="font-outfit text-3xl font-bold text-center mb-12 text-white/90">
-                            Lo que prometemos, <span className="text-neon-orange">lo cumplimos</span>
+                        <h2 className="font-outfit text-3xl font-bold text-center mb-12">
+                            <span className="text-neon-orange">Lo que prometemos</span>, lo cumplimos
                         </h2>
                         <div className="grid md:grid-cols-3 gap-6">
                             {[
