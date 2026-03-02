@@ -334,7 +334,7 @@ export default function HomeClient() {
             {/* ─────────────── MÉTRICAS ─────────────── */}
             <section className="py-16 px-6 relative z-10">
                 <div className="absolute inset-0 border-y border-white/5" />
-                <div className="max-w-7xl mx-auto grid grid-cols-2 lg:grid-cols-4 gap-8">
+                <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                     {metrics.map((m, i) => (
                         <motion.div
                             key={i}

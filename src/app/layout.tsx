@@ -3,6 +3,7 @@ import { Inter, Outfit } from "next/font/google";
 import "./globals.css";
 import CookieBanner from "@/components/CookieBanner";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -15,7 +16,10 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://numancia.digital'),
+  metadataBase: new URL('https://www.numanciadigital.es'),
+  verification: {
+    google: process.env.GOOGLE_SITE_VERIFICATION,
+  },
   title: {
     default: "Numancia Digital | Soluciones Digitales en Soria",
     template: "%s | Numancia Digital"
@@ -125,6 +129,7 @@ export default function RootLayout({
       </head>
       <body className={`${inter.variable} ${outfit.variable} font-sans antialiased`}>
         {children}
+        <GoogleAnalytics />
         <CookieBanner />
         <WhatsAppButton />
       </body>

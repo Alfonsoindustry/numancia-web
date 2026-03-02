@@ -11,6 +11,167 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
     {
+        slug: "cuanto-cuesta-una-pagina-web-en-soria-2025",
+        title: "¿Cuánto cuesta una página web en Soria? Guía de precios 2025",
+        excerpt: "Precios reales, sin humo. Desde 300€ de WordPress hasta los 900€/año de una web profesional con Next.js. Te explicamos qué incluye cada opción y qué conviene a tu negocio en Soria.",
+        date: "2 Mar 2025",
+        category: "Diseño Web",
+        readTime: "6 min",
+        image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=85&auto=format&fit=crop",
+        content: `
+## Por qué varía tanto el precio de una web
+
+Si has pedido presupuesto para una página web en Soria, probablemente te has encontrado con una horquilla desconcertante: desde 200€ hasta 15.000€ por "lo mismo". ¿Cómo es posible?
+
+La respuesta honesta es que **no es lo mismo**. Detrás de esa variación de precios hay diferencias enormes en tecnología, rendimiento, soporte y resultados reales. El precio de una web depende de quién la hace, con qué herramientas la construye, qué incluye después de la entrega y, sobre todo, qué resultados consigue.
+
+En esta guía te explicamos con transparencia total qué hay detrás de cada rango de precio y qué le conviene realmente a un negocio en Soria.
+
+## Las 3 opciones principales para negocios en Soria
+
+### Opción 1: WordPress, Wix o Squarespace (300-800€ de setup + costes mensuales)
+
+Es la opción más extendida entre autónomos y pequeños negocios. Un diseñador o freelance te monta una web en WordPress usando una plantilla de pago, o tú mismo te haces la web en Wix o Squarespace.
+
+**¿Qué obtienes por ese precio?**
+
+- Un diseño basado en plantilla, adaptable visualmente pero no construido para tu negocio específico
+- Velocidad media o baja (WordPress sin optimización profesional suele cargar entre 3 y 6 segundos)
+- Dependencia de plugins que requieren actualización constante
+- Hosting aparte (5-15€/mes), dominio aparte (10-15€/año), plugin de seguridad aparte, plugin de caché aparte, plugin de formularios aparte...
+
+**El coste real al año:**
+- Setup inicial: 300-800€
+- Hosting: 60-180€/año
+- Dominio: 10-15€/año
+- Plugins premium: 50-200€/año
+- Mantenimiento (actualizaciones, copias de seguridad): 20-50€/mes si lo subcontratas
+
+**Total año 1: entre 700€ y 1.800€**, con una web que puede necesitar revisión completa en 2-3 años.
+
+---
+
+### Opción 2: Agencia tradicional (3.000-15.000€ + mantenimiento caro)
+
+Las agencias de diseño web generalistas, normalmente con base en capitales de provincia o Madrid, ofrecen proyectos más completos con diseño personalizado, estrategia y desarrollo a medida.
+
+**¿Qué obtienes por ese precio?**
+
+- Diseño custom con UX trabajado
+- Desarrollo más robusto (aunque muchas siguen usando WordPress)
+- Gestión del proyecto por un equipo con diferentes perfiles
+- Contratos de mantenimiento anuales (normalmente 150-500€/mes)
+
+**El problema:**
+
+Para un negocio local en Soria, una inversión de 5.000-10.000€ en web tiene un retorno muy difícil de justificar. Además, los contratos de mantenimiento con agencias grandes suelen ser opacos: pagas mucho y no siempre sabes exactamente qué estás recibiendo.
+
+---
+
+### Opción 3: Agencia local especializada como Numancia Digital (900€/año, todo incluido)
+
+Es el modelo que hemos desarrollado específicamente para el tejido empresarial de Soria: una web profesional, construida con **Next.js 15** (la tecnología que usan Netflix y el New York Times), con todo incluido en una cuota anual sin sorpresas.
+
+**¿Qué incluye esa cuota?**
+
+- Diseño web custom adaptado a tu negocio y sector
+- Desarrollo en Next.js 15 (velocidad de carga inferior a 1 segundo)
+- Hosting incluido en servidores rápidos
+- Dominio incluido
+- Certificado SSL incluido
+- Optimización SEO técnica desde el código
+- Actualizaciones de contenido (hasta 2 al mes)
+- Soporte directo por WhatsApp o teléfono
+- Sin contratos de permanencia abusivos
+
+**El coste real al año: 900€**, con una web que rinde mejor técnicamente que la inmensa mayoría de opciones del mercado.
+
+## ¿Qué incluye cada opción?
+
+A continuación, una comparativa directa de lo que obtienes con cada opción:
+
+**Velocidad de carga**
+- WordPress/Wix: 3-6 segundos (media del mercado)
+- Agencia tradicional: 2-4 segundos
+- Numancia Digital (Next.js): menos de 1 segundo
+
+**SEO técnico**
+- WordPress/Wix: depende de plugins, configuración variable
+- Agencia tradicional: normalmente incluido, calidad variable
+- Numancia Digital: integrado en el código desde el primer día
+
+**Seguridad**
+- WordPress/Wix: vulnerable si no se actualiza constantemente (WordPress = 90% de webs hackeadas)
+- Agencia tradicional: depende de la tecnología que usen
+- Numancia Digital: arquitectura sin base de datos expuesta, sin plugins vulnerables
+
+**Soporte**
+- WordPress/Wix: foros, documentación online, soporte de pago
+- Agencia tradicional: contrato de mantenimiento aparte (150-500€/mes)
+- Numancia Digital: incluido en la cuota anual, persona de contacto directa en Soria
+
+**Actualizaciones de contenido**
+- WordPress/Wix: tú mismo (si sabes) o pagas por cada cambio
+- Agencia tradicional: presupuesto por separado
+- Numancia Digital: incluidas hasta 2 al mes
+
+**Coste total año 1**
+- WordPress/Wix: 700-1.800€
+- Agencia tradicional: 3.500-15.000€ + mantenimiento
+- Numancia Digital: 900€ todo incluido
+
+## El coste oculto de lo barato
+
+Existe una trampa habitual: pensar que una web de 300€ es una buena inversión porque es barata. Pero el precio real de una web barata no está en el setup inicial, está en lo que no funciona.
+
+**Velocidad:** Una web que carga en 5 segundos pierde el 53% de los visitantes antes de que vean nada. Si recibes 200 visitas al mes y la mitad se van por la lentitud, estás tirando 100 oportunidades de cliente al mes.
+
+**SEO:** Una web mal construida técnicamente no aparece en Google. Da igual lo bien que estés posicionado de palabra, si la web falla, Google no te muestra. El SEO no es un extra: es la razón principal por la que una web tiene valor.
+
+**Mantenimiento:** WordPress sin actualizar es un riesgo de seguridad real. Las vulnerabilidades en plugins son la causa del 90% de los hackeos de webs. Una web hackeada en Soria puede redirigir a tus clientes a páginas de phishing o desaparecer de Google de un día para otro.
+
+**Soporte:** Cuando algo falla, ¿a quién llamas? Con muchas webs baratas, la respuesta es: a nadie. El freelance ya no está disponible, la plantilla de WordPress ya no se actualiza, el plugin que hacía funcionar el formulario de contacto dejó de ser compatible.
+
+**El coste real de una web barata no es 300€. Es lo que pierdes cada mes que esa web no está trabajando por ti.**
+
+## ¿Qué necesita realmente un negocio en Soria?
+
+No todos los negocios necesitan lo mismo. Antes de hablar de precios, la pregunta importante es: ¿qué tipo de web necesitas?
+
+**Landing page (página única)**
+
+Ideal para: autónomos, profesionales independientes, negocios con un servicio muy concreto (electricistas, fontaneros, asesores...).
+
+Una sola página bien estructurada con información de servicios, zona de cobertura (Soria y provincia), formulario de contacto y botón de WhatsApp puede ser todo lo que necesitas. Simple, rápida, efectiva.
+
+**Web corporativa (3-6 páginas)**
+
+Ideal para: comercios, restaurantes, clínicas, servicios profesionales con varios productos o servicios, empresas que quieren transmitir imagen de marca sólida.
+
+Incluye página de inicio, servicios, sobre nosotros, galería o portafolio y contacto. Es el formato más habitual y el que mejor equilibra visibilidad y coste.
+
+**E-commerce (tienda online)**
+
+Ideal para: negocios que venden productos online, ya sea complementando la tienda física o como canal principal de venta.
+
+Es la opción más compleja técnicamente y la que más mantenimiento requiere. Precios a partir de 1.500-2.000€/año para una solución profesional y segura.
+
+En Numancia Digital trabajamos los tres formatos. La recomendación siempre depende del negocio, el sector y los objetivos específicos de cada cliente en Soria.
+
+## Conclusión: La inversión que sí vale la pena
+
+Vamos al dato concreto: si tu negocio capta aunque sea 2 clientes nuevos al mes gracias a tu web, ¿cuánto vale eso?
+
+Para una óptica en Soria, 2 clientes nuevos al mes pueden ser 300-600€ de facturación adicional. Para un abogado, puede ser 500-2.000€. Para un restaurante, puede ser llenar varias mesas adicionales cada semana.
+
+Una web de 900€/año que te trae 2 clientes al mes se paga sola en el primer mes. El resto del año es beneficio neto.
+
+En Numancia Digital lo tenemos claro: no vendemos webs, vendemos resultados. Y en Soria, donde el tejido empresarial es de proximidad y la competencia digital todavía es baja en muchos sectores, una web bien construida puede marcar la diferencia entre que te encuentren a ti o a tu competencia.
+
+**¿Quieres saber exactamente qué necesita tu negocio?** Hacemos una consulta gratuita y presencial en Soria en la que analizamos tu situación actual y te recomendamos la solución más adecuada, sin compromiso y sin venderte lo que no necesitas.
+        `
+    },
+    {
         slug: "por-que-tu-negocio-en-soria-necesita-una-web-en-2025",
         title: "Por qué tu negocio en Soria necesita una web en 2025 (y cómo hacerlo bien)",
         excerpt: "El 97% de los consumidores busca negocios locales en Google antes de visitarlos. Si tu negocio en Soria no aparece, estás regalando clientes a la competencia. Te explicamos qué necesitas realmente.",
