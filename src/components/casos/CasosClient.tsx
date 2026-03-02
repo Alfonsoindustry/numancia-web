@@ -3,167 +3,72 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, TrendingUp, MapPin, Globe, Share2, Zap, Tag } from "lucide-react";
+import {
+    ArrowRight,
+    TrendingUp,
+    MapPin,
+    Zap,
+    FileText,
+    Database,
+    Globe,
+    CheckCircle,
+    Clock,
+    BarChart3,
+} from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-/* ─── Tipos ─── */
-interface Caso {
-    nombre: string;
-    tipo: string;
-    categoria: string;
-    foto: string;
-    resultados: { valor: string; label: string }[];
-    descripcion: string;
-    tags: string[];
-    tagColor: string;
-    accentColor: string;
-    iconCategoria: React.ElementType;
-}
-
-/* ─── Colores por tag de servicio ─── */
-const tagColors: Record<string, string> = {
-    "Diseño Web": "text-blue-400 bg-blue-400/10 border-blue-400/20",
-    "SEO Local": "text-green-400 bg-green-400/10 border-green-400/20",
-    "Google Business": "text-yellow-400 bg-yellow-400/10 border-yellow-400/20",
-    "Redes Sociales": "text-pink-400 bg-pink-400/10 border-pink-400/20",
-    "Reservas Online": "text-purple-400 bg-purple-400/10 border-purple-400/20",
-    "Automatización": "text-cyan-400 bg-cyan-400/10 border-cyan-400/20",
-    "Ofimática": "text-orange-400 bg-orange-400/10 border-orange-400/20",
-};
-
-/* ─── Datos de los casos ─── */
-const casos: Caso[] = [
+/* ─── Servicios prestados ─── */
+const servicios = [
     {
-        nombre: "Óptica Castilla",
-        tipo: "Diseño Web + SEO Local",
-        categoria: "Salud y Bienestar",
-        foto: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80&auto=format&fit=crop",
-        resultados: [
-            { valor: "+340%", label: "visitas orgánicas" },
-            { valor: "Top 3", label: "Google Maps Soria" },
-            { valor: "48h", label: "web publicada" },
-        ],
+        icono: FileText,
+        titulo: "Informes de facturación automatizados",
         descripcion:
-            "Óptica tradicional en el centro de Soria sin presencia digital. En 30 días posicionada #1 para 'óptica Soria' con una web de alto rendimiento.",
-        tags: ["Diseño Web", "SEO Local", "Google Business"],
-        tagColor: "text-green-400 bg-green-400/10 border-green-400/20",
-        accentColor: "from-green-500/20 via-transparent to-transparent",
-        iconCategoria: Globe,
+            "Generación automática de informes mensuales y anuales de facturación completos: ventas por categoría, tendencias, comparativas interanuales y exportación directa a PDF y Excel. Cero trabajo manual.",
+        color: "text-blue-400",
+        bg: "bg-blue-400/10 border-blue-400/20",
     },
     {
-        nombre: "Restaurante La Numantina",
-        tipo: "Redes Sociales + Web",
-        categoria: "Hostelería",
-        foto: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80&auto=format&fit=crop",
-        resultados: [
-            { valor: "+890", label: "seguidores en 2 meses" },
-            { valor: "Activas", label: "reservas online" },
-            { valor: "+60%", label: "ocupación fines de semana" },
-        ],
+        icono: Zap,
+        titulo: "Automatizaciones de negocio",
         descripcion:
-            "Restaurante con cocina soriana de calidad pero invisible en redes. Estrategia de contenido + sistema de reservas online que triplicó las visitas desde Instagram.",
-        tags: ["Redes Sociales", "Diseño Web", "Reservas Online"],
-        tagColor: "text-pink-400 bg-pink-400/10 border-pink-400/20",
-        accentColor: "from-pink-500/20 via-transparent to-transparent",
-        iconCategoria: Share2,
+            "Flujos automatizados para albaranes, recordatorios de revisiones ópticas, gestión de garantías de monturas y seguimiento de pedidos a proveedores. El equipo se enfoca en el cliente, no en el papeleo.",
+        color: "text-purple-400",
+        bg: "bg-purple-400/10 border-purple-400/20",
     },
     {
-        nombre: "Taller Mecánico Picos de Urbión",
-        tipo: "Automatización + SEO",
-        categoria: "Automoción",
-        foto: "https://images.unsplash.com/photo-1625047509248-ec889cbff17f?w=800&q=80&auto=format&fit=crop",
-        resultados: [
-            { valor: "8h/sem", label: "ahorradas en facturación" },
-            { valor: "+220%", label: "llamadas desde Google" },
-            { valor: "0", label: "facturas pendientes" },
-        ],
+        icono: Database,
+        titulo: "Programa de ingesta de productos",
         descripcion:
-            "Taller mecánico gestionando todo en papel. Automatizamos presupuestos y facturas, y posicionamos el negocio para búsquedas locales de mecánicos en Soria.",
-        tags: ["Automatización", "SEO Local", "Ofimática"],
-        tagColor: "text-cyan-400 bg-cyan-400/10 border-cyan-400/20",
-        accentColor: "from-cyan-500/20 via-transparent to-transparent",
-        iconCategoria: Zap,
+            "Aplicación a medida para la incorporación masiva y sencilla de nuevos productos al catálogo: lectura de hojas de datos de proveedor, normalización automática y volcado directo al sistema de gestión.",
+        color: "text-cyan-400",
+        bg: "bg-cyan-400/10 border-cyan-400/20",
+    },
+    {
+        icono: Globe,
+        titulo: "Mejoras continuas en la web",
+        descripcion:
+            "Optimización de rendimiento, nuevas secciones de catálogo online, integración con Google Business Profile y mejoras de SEO local para ganar visibilidad en búsquedas de óptica en Soria.",
+        color: "text-green-400",
+        bg: "bg-green-400/10 border-green-400/20",
     },
 ];
 
-/* ─── Tarjeta de caso ─── */
-function CasoCard({ caso, index }: { caso: Caso; index: number }) {
-    return (
-        <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: index * 0.15 }}
-            className="group glass rounded-[2.5rem] border border-white/5 hover:border-neon-orange/30 transition-all duration-500 overflow-hidden hover:scale-[1.015]"
-        >
-            {/* Foto con overlay */}
-            <div className="relative w-full aspect-video overflow-hidden">
-                <Image
-                    src={caso.foto}
-                    alt={caso.nombre}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-700"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 800px"
-                />
-                {/* Overlay gradient */}
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-[#0A0A0A]/40 to-transparent" />
+/* ─── Métricas destacadas ─── */
+const metricas = [
+    { valor: "12h", label: "ahorradas por semana", icono: Clock },
+    { valor: "500+", label: "productos migrados", icono: Database },
+    { valor: "100%", label: "informes automatizados", icono: BarChart3 },
+    { valor: "0", label: "errores en facturación", icono: CheckCircle },
+];
 
-                {/* Badge de categoría */}
-                <div className="absolute top-5 left-5">
-                    <span className={`inline-flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 rounded-full border backdrop-blur-sm ${caso.tagColor}`}>
-                        <caso.iconCategoria size={11} />
-                        {caso.categoria}
-                    </span>
-                </div>
-
-                {/* Glow naranja en hover */}
-                <div className="absolute inset-0 bg-neon-orange/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-            </div>
-
-            {/* Contenido */}
-            <div className="p-8 md:p-10">
-                {/* Cabecera */}
-                <div className="mb-6">
-                    <h3 className="font-outfit text-2xl md:text-3xl font-bold mb-1 group-hover:text-neon-orange transition-colors duration-300">
-                        {caso.nombre}
-                    </h3>
-                    <p className="text-text-slate text-sm font-medium">{caso.tipo}</p>
-                </div>
-
-                {/* Tags de servicios */}
-                <div className="flex flex-wrap gap-2 mb-8">
-                    {caso.tags.map((tag) => (
-                        <span
-                            key={tag}
-                            className={`inline-flex items-center gap-1 text-xs font-semibold px-2.5 py-1 rounded-full border ${tagColors[tag] ?? "text-white/60 bg-white/5 border-white/10"}`}
-                        >
-                            <Tag size={9} />
-                            {tag}
-                        </span>
-                    ))}
-                </div>
-
-                {/* Métricas */}
-                <div className="grid grid-cols-3 gap-4 mb-8 p-5 rounded-2xl bg-white/[0.03] border border-white/5">
-                    {caso.resultados.map((res, i) => (
-                        <div key={i} className="text-center">
-                            <div className="font-outfit text-xl md:text-2xl font-bold text-neon-orange neon-glow leading-tight">
-                                {res.valor}
-                            </div>
-                            <div className="text-text-slate text-xs mt-1 leading-tight">{res.label}</div>
-                        </div>
-                    ))}
-                </div>
-
-                {/* Descripción */}
-                <p className="text-text-slate text-sm leading-relaxed">
-                    {caso.descripcion}
-                </p>
-            </div>
-        </motion.div>
-    );
-}
+/* ─── Línea de tiempo del proyecto ─── */
+const timeline = [
+    { fase: "Análisis", descripcion: "Auditoría de procesos existentes, identificación de cuellos de botella y priorización de automatizaciones con mayor impacto." },
+    { fase: "Automatización", descripcion: "Desarrollo de los flujos de informes mensuales/anuales, automatización de recordatorios y gestión documental." },
+    { fase: "Ingesta de datos", descripcion: "Programa personalizado para la carga masiva de productos desde catálogos de proveedores. Migración de 500+ referencias." },
+    { fase: "Web & SEO", descripcion: "Mejoras de rendimiento, nuevas secciones y optimización local para búsquedas de óptica en Soria y provincia." },
+];
 
 /* ─── Componente principal ─── */
 export default function CasosClient() {
@@ -176,16 +81,12 @@ export default function CasosClient() {
 
                     {/* ── HERO ── */}
                     <div className="text-center mb-24 relative">
-                        {/* Orb decorativo de fondo */}
                         <div
                             aria-hidden="true"
                             className="absolute -top-20 left-1/2 -translate-x-1/2 w-[600px] h-[300px] rounded-full pointer-events-none"
-                            style={{
-                                background: "radial-gradient(ellipse, rgba(255,138,0,0.08) 0%, transparent 70%)",
-                            }}
+                            style={{ background: "radial-gradient(ellipse, rgba(255,138,0,0.08) 0%, transparent 70%)" }}
                         />
 
-                        {/* Badge */}
                         <motion.div
                             initial={{ opacity: 0, y: -10 }}
                             animate={{ opacity: 1, y: 0 }}
@@ -193,10 +94,9 @@ export default function CasosClient() {
                             className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-neon-orange/30 bg-neon-orange/5 text-neon-orange text-xs font-bold uppercase tracking-widest mb-6"
                         >
                             <MapPin size={12} />
-                            Resultados reales · Soria
+                            Caso real · Soria
                         </motion.div>
 
-                        {/* H1 */}
                         <motion.h1
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
@@ -208,18 +108,16 @@ export default function CasosClient() {
                             <span className="text-neon-orange neon-glow">hablan por sí solos</span>
                         </motion.h1>
 
-                        {/* Subtítulo */}
                         <motion.p
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ delay: 0.3 }}
                             className="text-text-slate text-lg max-w-2xl mx-auto leading-relaxed"
                         >
-                            Negocios reales de Soria con resultados medibles. Sin humo, sin promesas vacías.
+                            Resultados reales con negocios de Soria. Sin humo, sin promesas vacías.
                             Aquí están los números que importan.
                         </motion.p>
 
-                        {/* Indicadores rápidos */}
                         <motion.div
                             initial={{ opacity: 0, y: 10 }}
                             animate={{ opacity: 1, y: 0 }}
@@ -227,7 +125,7 @@ export default function CasosClient() {
                             className="inline-flex flex-wrap justify-center gap-x-8 gap-y-3 mt-10"
                         >
                             {[
-                                { icono: TrendingUp, texto: "Resultados en 30 días" },
+                                { icono: TrendingUp, texto: "Resultados medibles" },
                                 { icono: MapPin, texto: "100% negocios de Soria" },
                                 { icono: Globe, texto: "Presencia digital garantizada" },
                             ].map(({ icono: Icono, texto }) => (
@@ -239,12 +137,168 @@ export default function CasosClient() {
                         </motion.div>
                     </div>
 
-                    {/* ── GRID DE CASOS ── */}
-                    <div className="grid lg:grid-cols-1 gap-10 max-w-5xl mx-auto mb-28">
-                        {casos.map((caso, i) => (
-                            <CasoCard key={caso.nombre} caso={caso} index={i} />
-                        ))}
-                    </div>
+                    {/* ── CASO: ÓPTICA PERLADO ── */}
+                    <motion.div
+                        initial={{ opacity: 0, y: 40 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.7 }}
+                        className="mb-28"
+                    >
+                        {/* Cabecera del caso */}
+                        <div className="glass rounded-[3rem] border border-white/5 overflow-hidden">
+
+                            {/* Foto hero */}
+                            <div className="relative w-full h-72 md:h-96 overflow-hidden">
+                                <Image
+                                    src="https://images.unsplash.com/photo-1574258495973-f010dfbb5371?w=1400&q=80&auto=format&fit=crop"
+                                    alt="Óptica Perlado Soria"
+                                    fill
+                                    className="object-cover"
+                                    sizes="100vw"
+                                    priority
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-[#0A0A0A]/50 to-transparent" />
+
+                                {/* Badge cliente */}
+                                <div className="absolute top-6 left-6">
+                                    <span className="inline-flex items-center gap-2 text-xs font-bold px-4 py-2 rounded-full border border-neon-orange/40 bg-neon-orange/10 text-neon-orange backdrop-blur-sm">
+                                        <CheckCircle size={12} />
+                                        Cliente activo
+                                    </span>
+                                </div>
+
+                                {/* Nombre sobre la foto */}
+                                <div className="absolute bottom-0 left-0 right-0 p-8 md:p-12">
+                                    <p className="text-neon-orange text-sm font-bold uppercase tracking-widest mb-2">
+                                        Óptica · Soria capital
+                                    </p>
+                                    <h2 className="font-outfit text-4xl md:text-6xl font-bold leading-tight">
+                                        Óptica Perlado
+                                    </h2>
+                                </div>
+                            </div>
+
+                            {/* Métricas */}
+                            <div className="grid grid-cols-2 md:grid-cols-4 gap-0 border-b border-white/5">
+                                {metricas.map((m, i) => {
+                                    const Icono = m.icono;
+                                    return (
+                                        <motion.div
+                                            key={m.label}
+                                            initial={{ opacity: 0, y: 20 }}
+                                            whileInView={{ opacity: 1, y: 0 }}
+                                            viewport={{ once: true }}
+                                            transition={{ delay: i * 0.1 }}
+                                            className={`p-8 text-center ${i < 3 ? "border-r border-white/5" : ""} ${i < 2 ? "border-b border-white/5 md:border-b-0" : ""}`}
+                                        >
+                                            <Icono size={20} className="text-neon-orange mx-auto mb-3 opacity-70" />
+                                            <div className="font-outfit text-3xl md:text-4xl font-bold text-neon-orange neon-glow mb-1">
+                                                {m.valor}
+                                            </div>
+                                            <div className="text-text-slate text-xs leading-tight">{m.label}</div>
+                                        </motion.div>
+                                    );
+                                })}
+                            </div>
+
+                            {/* Descripción general */}
+                            <div className="p-8 md:p-12 border-b border-white/5">
+                                <p className="text-text-slate text-lg leading-relaxed max-w-3xl">
+                                    Óptica Perlado lleva años siendo un referente en Soria. Cuando llegaron a nosotros,
+                                    gestionaban la facturación, los pedidos y el catálogo de producto de forma manual,
+                                    con hojas de cálculo y procesos que consumían horas cada semana.
+                                    Hoy, sus procesos clave son automáticos y su equipo dedica ese tiempo a lo que
+                                    realmente importa: atender a sus clientes.
+                                </p>
+                            </div>
+
+                            {/* Servicios en detalle */}
+                            <div className="p-8 md:p-12">
+                                <h3 className="font-outfit text-2xl font-bold mb-8">
+                                    Qué hemos hecho
+                                </h3>
+                                <div className="grid md:grid-cols-2 gap-6">
+                                    {servicios.map((s, i) => {
+                                        const Icono = s.icono;
+                                        return (
+                                            <motion.div
+                                                key={s.titulo}
+                                                initial={{ opacity: 0, x: -20 }}
+                                                whileInView={{ opacity: 1, x: 0 }}
+                                                viewport={{ once: true }}
+                                                transition={{ delay: i * 0.1 }}
+                                                className={`p-6 rounded-2xl border ${s.bg} flex gap-4`}
+                                            >
+                                                <div className={`shrink-0 w-10 h-10 rounded-xl flex items-center justify-center ${s.bg}`}>
+                                                    <Icono size={18} className={s.color} />
+                                                </div>
+                                                <div>
+                                                    <h4 className={`font-outfit font-bold mb-2 ${s.color}`}>
+                                                        {s.titulo}
+                                                    </h4>
+                                                    <p className="text-text-slate text-sm leading-relaxed">
+                                                        {s.descripcion}
+                                                    </p>
+                                                </div>
+                                            </motion.div>
+                                        );
+                                    })}
+                                </div>
+                            </div>
+
+                            {/* Línea de tiempo */}
+                            <div className="p-8 md:p-12 border-t border-white/5 bg-white/[0.02]">
+                                <h3 className="font-outfit text-2xl font-bold mb-8">
+                                    Cómo lo hicimos
+                                </h3>
+                                <div className="relative">
+                                    {/* Línea vertical */}
+                                    <div className="absolute left-4 top-2 bottom-2 w-[2px] bg-gradient-to-b from-neon-orange via-neon-orange/30 to-transparent hidden md:block" />
+                                    <div className="space-y-8 md:pl-14">
+                                        {timeline.map((item, i) => (
+                                            <motion.div
+                                                key={item.fase}
+                                                initial={{ opacity: 0, x: -20 }}
+                                                whileInView={{ opacity: 1, x: 0 }}
+                                                viewport={{ once: true }}
+                                                transition={{ delay: i * 0.12 }}
+                                                className="relative flex gap-4 items-start"
+                                            >
+                                                {/* Punto en la línea */}
+                                                <div className="hidden md:flex absolute -left-[3.15rem] top-1 w-4 h-4 rounded-full bg-neon-orange border-4 border-[#0A0A0A] shrink-0" />
+                                                <div>
+                                                    <span className="inline-block text-xs font-bold text-neon-orange uppercase tracking-widest mb-1">
+                                                        {item.fase}
+                                                    </span>
+                                                    <p className="text-text-slate text-sm leading-relaxed">
+                                                        {item.descripcion}
+                                                    </p>
+                                                </div>
+                                            </motion.div>
+                                        ))}
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Quote del cliente */}
+                            <div className="p-8 md:p-12 border-t border-white/5">
+                                <div className="relative p-8 rounded-2xl bg-neon-orange/5 border border-neon-orange/15">
+                                    <span className="absolute top-4 left-6 text-6xl text-neon-orange/20 font-serif leading-none select-none">
+                                        "
+                                    </span>
+                                    <p className="text-lg text-white/80 leading-relaxed relative z-10 pt-4">
+                                        Lo que antes nos llevaba media mañana del viernes ahora está listo
+                                        automáticamente cada primer día del mes. El programa de productos
+                                        nos ha ahorrado semanas de trabajo al año.
+                                    </p>
+                                    <p className="text-neon-orange text-sm font-bold mt-4">
+                                        — Equipo de Óptica Perlado, Soria
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </motion.div>
 
                     {/* ── CTA FINAL ── */}
                     <motion.div
@@ -254,21 +308,16 @@ export default function CasosClient() {
                         transition={{ duration: 0.7 }}
                         className="relative text-center rounded-[3rem] overflow-hidden"
                     >
-                        {/* Fondo glass y glow */}
                         <div className="absolute inset-0 glass border border-neon-orange/20 bg-gradient-to-br from-neon-orange/8 via-transparent to-neon-orange/4 rounded-[3rem]" />
                         <div
                             aria-hidden="true"
                             className="absolute inset-0 rounded-[3rem] pointer-events-none"
                             style={{ boxShadow: "inset 0 0 80px rgba(255,138,0,0.06)" }}
                         />
-
-                        {/* Orb central */}
                         <div
                             aria-hidden="true"
                             className="absolute -top-20 left-1/2 -translate-x-1/2 w-80 h-80 rounded-full pointer-events-none"
-                            style={{
-                                background: "radial-gradient(circle, rgba(255,138,0,0.12) 0%, transparent 70%)",
-                            }}
+                            style={{ background: "radial-gradient(circle, rgba(255,138,0,0.12) 0%, transparent 70%)" }}
                         />
 
                         <div className="relative z-10 p-12 md:p-16">
@@ -288,8 +337,8 @@ export default function CasosClient() {
                             </h3>
 
                             <p className="text-text-slate text-lg mb-10 max-w-xl mx-auto leading-relaxed">
-                                Analizamos tu presencia digital de forma gratuita y te decimos exactamente qué
-                                necesitas para conseguir resultados como estos en Soria.
+                                Analizamos tus procesos de forma gratuita y te decimos exactamente
+                                qué podemos automatizar para que recuperes tiempo y reduzcas errores.
                             </p>
 
                             <motion.div
