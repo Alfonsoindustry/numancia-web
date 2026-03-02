@@ -15,10 +15,24 @@ export async function generateMetadata({ params }: Props) {
     const { slug } = await params;
     const post = getBlogPost(slug);
     if (!post) return {};
-    return constructMetadata({
-        title: post.title,
-        description: post.excerpt,
-    });
+    return {
+        ...constructMetadata({ title: post.title, description: post.excerpt }),
+        openGraph: {
+            title: post.title,
+            description: post.excerpt,
+            url: `https://www.numanciadigital.es/blog/${slug}`,
+            siteName: "Numancia Digital",
+            locale: "es_ES",
+            type: "article",
+            images: [{ url: post.image, width: 1200, height: 630, alt: post.title }],
+        },
+        twitter: {
+            card: "summary_large_image" as const,
+            title: post.title,
+            description: post.excerpt,
+            images: [post.image],
+        },
+    };
 }
 
 export default async function BlogPostPage({ params }: Props) {

@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Monitor, Code, Rocket, Layout, ArrowRight, TrendingUp, CheckCircle2 } from "lucide-react";
+import { Monitor, Code, Rocket, Layout, ArrowRight, TrendingUp, CheckCircle2, Gauge, Smartphone, Search } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Link from "next/link";
@@ -48,6 +48,12 @@ const BrowserIllustration = () => (
     </svg>
 );
 
+const metrics = [
+    { value: "< 1s", label: "Tiempo de carga", icon: Gauge },
+    { value: "100%", label: "Responsive móvil", icon: Smartphone },
+    { value: "SEO", label: "Incluido de serie", icon: Search },
+];
+
 const features = [
     { title: "Rendimiento Top", desc: "Carga en menos de 1 segundo. No perderás ni un cliente por lentitud.", icon: Rocket },
     { title: "Diseño Adaptable", desc: "Perfecta en móvil, tablet y escritorio. El 70% del tráfico viene del móvil.", icon: Layout },
@@ -70,7 +76,7 @@ export default function WebServiceClient() {
                 <div className="max-w-7xl mx-auto">
 
                     {/* Hero */}
-                    <div className="grid lg:grid-cols-2 gap-16 items-center mb-32">
+                    <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
                         <motion.div initial={{ opacity: 0, x: -30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8 }}>
                             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-neon-orange/20 text-neon-orange text-sm font-bold mb-6">
                                 <Monitor size={16} /> DISEÑO Y DESARROLLO WEB
@@ -100,6 +106,24 @@ export default function WebServiceClient() {
                         </motion.div>
                     </div>
 
+                    {/* Métricas rápidas */}
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        className="grid grid-cols-3 gap-4 mb-24"
+                    >
+                        {metrics.map((m, i) => (
+                            <div key={i} className="glass p-6 rounded-2xl border border-white/5 text-center group hover:border-neon-orange/20 transition-all">
+                                <div className="w-10 h-10 bg-neon-orange/10 rounded-xl flex items-center justify-center mx-auto mb-3 group-hover:bg-neon-orange/20 transition-all">
+                                    <m.icon size={20} className="text-neon-orange" />
+                                </div>
+                                <div className="font-outfit text-2xl font-bold text-neon-orange neon-glow mb-1">{m.value}</div>
+                                <div className="text-text-slate text-sm">{m.label}</div>
+                            </div>
+                        ))}
+                    </motion.div>
+
                     {/* Proceso */}
                     <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-32">
                         <h2 className="font-outfit text-4xl font-bold mb-16 text-center">Nuestro <span className="text-neon-orange">proceso</span></h2>
@@ -110,7 +134,7 @@ export default function WebServiceClient() {
                                         <div className="hidden md:block absolute top-8 left-full w-full h-[1px] bg-gradient-to-r from-neon-orange/30 to-transparent z-0" />
                                     )}
                                     <div className="glass p-8 rounded-2xl border border-white/5 hover:border-neon-orange/20 transition-all relative z-10">
-                                        <div className="font-outfit text-4xl font-bold text-neon-orange/20 mb-4">{p.step}</div>
+                                        <div className="font-outfit text-5xl font-bold text-neon-orange neon-glow mb-4">{p.step}</div>
                                         <h3 className="font-outfit text-xl font-bold mb-3">{p.title}</h3>
                                         <p className="text-text-slate text-sm leading-relaxed">{p.desc}</p>
                                     </div>
@@ -140,7 +164,10 @@ export default function WebServiceClient() {
                         <Link href="/contacto" className="inline-flex items-center gap-2 bg-neon-orange text-white px-10 py-5 rounded-2xl font-bold text-xl hover:bg-secondary-orange transition-all neon-border">
                             Auditoría Gratuita <ArrowRight size={22} />
                         </Link>
-                        <div className="mt-6 flex flex-wrap justify-center gap-6 text-sm text-text-slate">
+                        <p className="mt-4 text-text-slate text-sm">
+                            Respuesta en menos de 24h · Sin compromiso
+                        </p>
+                        <div className="mt-4 flex flex-wrap justify-center gap-6 text-sm text-text-slate">
                             {["Sin compromiso", "Respuesta en 24h", "Presencial en Soria"].map((item) => (
                                 <span key={item} className="flex items-center gap-2">
                                     <CheckCircle2 size={14} className="text-neon-orange" /> {item}

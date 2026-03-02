@@ -3,79 +3,70 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
-import { Cookie, X } from "lucide-react";
 
 export default function CookieBanner() {
-    const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
 
-    useEffect(() => {
-        const consent = localStorage.getItem("cookie-consent");
-        if (!consent) {
-            const timer = setTimeout(() => setIsVisible(true), 1500);
-            return () => clearTimeout(timer);
-        }
-    }, []);
+  useEffect(() => {
+    const consent = localStorage.getItem("cookie_consent");
+    if (!consent) {
+      setIsVisible(true);
+    }
+  }, []);
 
-    const handleAccept = () => {
-        localStorage.setItem("cookie-consent", "accepted");
-        setIsVisible(false);
-    };
+  const handleAccept = () => {
+    localStorage.setItem("cookie_consent", "accepted");
+    setIsVisible(false);
+  };
 
-    const handleDecline = () => {
-        localStorage.setItem("cookie-consent", "declined");
-        setIsVisible(false);
-    };
+  const handleReject = () => {
+    localStorage.setItem("cookie_consent", "rejected");
+    setIsVisible(false);
+  };
 
-    return (
-        <AnimatePresence>
-            {isVisible && (
-                <motion.div
-                    initial={{ y: 100, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
-                    exit={{ y: 100, opacity: 0 }}
-                    className="fixed bottom-6 left-6 right-6 z-[100] flex justify-center pointer-events-none"
+  return (
+    <AnimatePresence>
+      {isVisible && (
+        <motion.div
+          initial={{ y: 100, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          exit={{ y: 100, opacity: 0 }}
+          transition={{ delay: 1.5, duration: 0.5, ease: "easeOut" }}
+          className="fixed bottom-0 left-0 right-0 z-[100] w-full"
+        >
+          <div className="glass border-t border-neon-orange/20 shadow-[0_-4px_30px_rgba(255,138,0,0.08)]">
+            <div className="max-w-7xl mx-auto px-6 py-5 flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
+              {/* Texto */}
+              <p className="text-text-slate text-sm leading-relaxed text-center sm:text-left flex-1">
+                Usamos cookies propias para mejorar tu experiencia. Puedes
+                aceptarlas o rechazarlas.{" "}
+                <Link
+                  href="/legal/cookies"
+                  className="text-neon-orange hover:underline font-medium whitespace-nowrap"
                 >
-                    <div className="bg-neon-orange p-6 md:p-8 rounded-[2rem] border border-white/20 shadow-[0_20px_50px_rgba(255,138,0,0.3)] max-w-4xl w-full pointer-events-auto relative overflow-hidden group">
-                        <div className="absolute -inset-1 bg-white/20 blur opacity-0 group-hover:opacity-100 transition duration-1000"></div>
+                  Política de cookies
+                </Link>
+              </p>
 
-                        <div className="relative flex flex-col md:flex-row items-center gap-6">
-                            <div className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center shrink-0 border border-white/20">
-                                <Cookie className="text-white" size={24} />
-                            </div>
-
-                            <div className="flex-grow text-center md:text-left">
-                                <h3 className="font-outfit font-bold text-white mb-1">Control de Cookies</h3>
-                                <p className="text-white/90 text-sm leading-relaxed">
-                                    Utilizamos cookies propias y de terceros para mejorar tu experiencia. Al continuar navegando, consideramos que aceptas su uso. Puedes leer más en nuestra{" "}
-                                    <Link href="/legal/cookies" className="text-white hover:underline font-bold">Política de Cookies</Link>.
-                                </p>
-                            </div>
-
-                            <div className="flex flex-wrap justify-center gap-3 shrink-0">
-                                <button
-                                    onClick={handleDecline}
-                                    className="px-6 py-2.5 rounded-xl text-sm font-bold text-white/70 hover:text-white transition-colors"
-                                >
-                                    Rechazar
-                                </button>
-                                <button
-                                    onClick={handleAccept}
-                                    className="bg-white text-neon-orange px-8 py-2.5 rounded-xl text-sm font-bold hover:bg-white/90 transition-all shadow-[0_10px_20px_rgba(0,0,0,0.1)] active:scale-95"
-                                >
-                                    Aceptar todo
-                                </button>
-                            </div>
-
-                            <button
-                                onClick={() => setIsVisible(false)}
-                                className="absolute top-4 right-4 text-white/20 hover:text-white transition-colors"
-                            >
-                                <X size={18} />
-                            </button>
-                        </div>
-                    </div>
-                </motion.div>
-            )}
-        </AnimatePresence>
-    );
+              {/* Botones */}
+              <div className="flex flex-col sm:flex-row items-center gap-3 shrink-0 w-full sm:w-auto">
+                <button
+                  onClick={handleReject}
+                  className="glass border border-white/10 hover:border-white/20 text-text-slate hover:text-white text-sm font-medium px-6 py-2.5 rounded-xl transition-all duration-200 w-full sm:w-auto"
+                >
+                  Rechazar
+                </button>
+                <button
+                  onClick={handleAccept}
+                  className="bg-neon-orange neon-border text-white text-sm font-bold px-7 py-2.5 rounded-xl hover:brightness-110 active:scale-95 transition-all duration-200 w-full sm:w-auto"
+                >
+                  Aceptar
+                </button>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+      )}
+    </AnimatePresence>
+  );
 }

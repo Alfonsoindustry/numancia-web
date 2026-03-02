@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
@@ -46,6 +47,18 @@ function renderMarkdown(content: string): string {
 }
 
 export default function BlogPostClient({ post }: { post: BlogPost }) {
+    const [readProgress, setReadProgress] = useState(0);
+
+    useEffect(() => {
+        const update = () => {
+            const scrollTop = window.scrollY;
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            setReadProgress(docHeight > 0 ? (scrollTop / docHeight) * 100 : 0);
+        };
+        window.addEventListener("scroll", update, { passive: true });
+        return () => window.removeEventListener("scroll", update);
+    }, []);
+
     const currentIndex = blogPosts.findIndex((p) => p.slug === post.slug);
     const prevPost = currentIndex > 0 ? blogPosts[currentIndex - 1] : null;
     const nextPost = currentIndex < blogPosts.length - 1 ? blogPosts[currentIndex + 1] : null;
@@ -61,6 +74,11 @@ export default function BlogPostClient({ post }: { post: BlogPost }) {
 
     return (
         <div className="min-h-screen bg-[#0A0A0A] text-white selection:bg-neon-orange/30 selection:text-neon-orange">
+            {/* Barra de progreso de lectura */}
+            <div
+                className="fixed top-0 left-0 z-[60] h-[3px] bg-neon-orange transition-[width] duration-75 ease-out"
+                style={{ width: `${readProgress}%` }}
+            />
             <Navbar />
 
             <main className="pt-32 pb-20 px-6">
