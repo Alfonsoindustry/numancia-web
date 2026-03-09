@@ -96,6 +96,7 @@ export default function ContactoClient() {
         phone: "",
         subject: "Diseño Web",
         message: "",
+        website: "", // honeypot: debe quedar vacío siempre
     });
 
     const handleSubmit = async (e: React.FormEvent) => {
@@ -111,7 +112,7 @@ export default function ContactoClient() {
 
             if (response.ok) {
                 setStatus("success");
-                setFormData({ name: "", phone: "", subject: "Diseño Web", message: "" });
+                setFormData({ name: "", phone: "", subject: "Diseño Web", message: "", website: "" });
             } else {
                 setStatus("error");
             }
@@ -304,6 +305,18 @@ export default function ContactoClient() {
                                                 <p className="text-text-slate text-sm">
                                                     Rellena el formulario y te llamamos sin compromiso.
                                                 </p>
+                                            </div>
+
+                                            {/* Honeypot anti-spam (invisible para humanos) */}
+                                            <div style={{ position: 'absolute', left: '-9999px', opacity: 0, pointerEvents: 'none' }} aria-hidden="true">
+                                                <input
+                                                    type="text"
+                                                    name="website"
+                                                    tabIndex={-1}
+                                                    autoComplete="off"
+                                                    value={formData.website}
+                                                    onChange={(e) => setFormData({ ...formData, website: e.target.value })}
+                                                />
                                             </div>
 
                                             {/* Nombre + Teléfono */}

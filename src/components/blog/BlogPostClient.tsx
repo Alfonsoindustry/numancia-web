@@ -9,9 +9,19 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { BlogPost, blogPosts } from "@/lib/blog-posts";
 
+// Escapa caracteres HTML peligrosos antes de procesar markdown
+function escapeHtml(text: string): string {
+    return text
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#039;');
+}
+
 // Renderizado simple de Markdown a HTML (sin dependencias extra)
 function renderMarkdown(content: string): string {
-    const lines = content.split('\n');
+    const lines = escapeHtml(content).split('\n');
     const result: string[] = [];
     let inList = false;
 
