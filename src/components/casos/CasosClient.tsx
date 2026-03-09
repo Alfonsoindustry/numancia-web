@@ -158,8 +158,7 @@ export default function CasosClient() {
                                     sizes="100vw"
                                     priority
                                 />
-                                <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-[#0A0A0A]/5 to-transparent" />
-
+                                
                                 {/* Badge cliente */}
                                 <div className="absolute top-6 left-6">
                                     <span className="inline-flex items-center gap-2 text-xs font-bold px-4 py-2 rounded-full border border-neon-orange/40 bg-neon-orange/10 text-neon-orange backdrop-blur-sm">
