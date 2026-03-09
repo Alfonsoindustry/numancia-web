@@ -158,7 +158,7 @@ export default function CasosClient() {
                                     sizes="100vw"
                                     priority
                                 />
-                                <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-[#0A0A0A]/50 to-transparent" />
+                                <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-[#0A0A0A]/20 to-transparent" />
 
                                 {/* Badge cliente */}
                                 <div className="absolute top-6 left-6">
