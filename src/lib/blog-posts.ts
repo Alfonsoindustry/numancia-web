@@ -11,10 +11,10 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
     {
-        slug: "cuanto-cuesta-una-pagina-web-en-soria-2025",
-        title: "¿Cuánto cuesta una página web en Soria? Guía de precios 2025",
+        slug: "cuanto-cuesta-una-pagina-web-en-soria-2026",
+        title: "¿Cuánto cuesta una página web en Soria? Guía de precios 2026",
         excerpt: "Precios reales, sin humo. Desde 300€ de WordPress hasta los 1.000€/año de una web profesional con Next.js. Te explicamos qué incluye cada opción y qué conviene a tu negocio en Soria.",
-        date: "2 Mar 2025",
+        date: "2 Mar 2026",
         category: "Diseño Web",
         readTime: "6 min",
         image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=85&auto=format&fit=crop",
@@ -172,10 +172,10 @@ En Numancia Digital lo tenemos claro: no vendemos webs, vendemos resultados. Y e
         `
     },
     {
-        slug: "por-que-tu-negocio-en-soria-necesita-una-web-en-2025",
-        title: "Por qué tu negocio en Soria necesita una web en 2025 (y cómo hacerlo bien)",
+        slug: "por-que-tu-negocio-en-soria-necesita-una-web-en-2026",
+        title: "Por qué tu negocio en Soria necesita una web en 2026 (y cómo hacerlo bien)",
         excerpt: "El 97% de los consumidores busca negocios locales en Google antes de visitarlos. Si tu negocio en Soria no aparece, estás regalando clientes a la competencia. Te explicamos qué necesitas realmente.",
-        date: "28 febrero 2025",
+        date: "28 febrero 2026",
         category: "Diseño Web",
         readTime: "6 min",
         image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80&auto=format&fit=crop",
@@ -238,10 +238,10 @@ Sin compromiso. Solo valor real.
         `
     },
     {
-        slug: "seo-local-soria-guia-completa-2025",
-        title: "SEO Local en Soria: La guía completa para aparecer el primero en Google (2025)",
+        slug: "seo-local-soria-guia-completa-2026",
+        title: "SEO Local en Soria: La guía completa para aparecer el primero en Google (2026)",
         excerpt: "Aparecer en Google Maps cuando alguien busca tu servicio en Soria no es magia. Es técnica. Te explicamos exactamente qué hacer para dominarlo.",
-        date: "15 febrero 2025",
+        date: "15 febrero 2026",
         category: "SEO Local",
         readTime: "8 min",
         image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&q=80&auto=format&fit=crop",
@@ -306,7 +306,7 @@ Tu web necesita tener estas frases de forma natural en títulos, textos y metaet
 
 ## SEO técnico: lo que no se ve pero importa mucho
 
-Por muy buena que sea tu estrategia de contenido, si tu web técnicamente falla, Google no te va a premiar. Los factores técnicos más importantes para el SEO local en 2025:
+Por muy buena que sea tu estrategia de contenido, si tu web técnicamente falla, Google no te va a premiar. Los factores técnicos más importantes para el SEO local en 2026:
 
 **Velocidad:** Google prioriza webs rápidas. Tu web necesita cargar en menos de 2 segundos en móvil. Esto se mide con Google PageSpeed Insights.
 
@@ -342,7 +342,7 @@ Solicítala sin ningún compromiso.
         slug: "redes-sociales-negocios-soria-que-funciona",
         title: "Redes Sociales para negocios de Soria: qué funciona realmente (y qué es perder el tiempo)",
         excerpt: "Instagram, Facebook, TikTok, LinkedIn... ¿En cuál debe estar tu negocio soriano? No en todas. Te decimos dónde está realmente tu cliente.",
-        date: "5 febrero 2025",
+        date: "5 febrero 2026",
         category: "Redes Sociales",
         readTime: "7 min",
         image: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=800&q=80&auto=format&fit=crop",
@@ -444,7 +444,7 @@ Si tus redes sociales llevan tiempo sin actividad o simplemente no estás viendo
         slug: "automatizacion-pequenas-empresas-soria",
         title: "Automatización para pequeñas empresas de Soria: 5 tareas que puedes eliminar esta semana",
         excerpt: "La automatización no es solo para grandes empresas. Un pequeño comercio en Soria puede ahorrar 10-15 horas semanales automatizando procesos básicos. Te mostramos cómo.",
-        date: "22 enero 2025",
+        date: "22 enero 2026",
         category: "Automatización",
         readTime: "6 min",
         image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80&auto=format&fit=crop",
@@ -531,7 +531,7 @@ Sin jerga técnica. Sin venderte lo que no necesitas. Solo soluciones concretas 
         slug: "diferencia-entre-una-web-cara-y-una-web-que-vende",
         title: "La diferencia entre una web cara y una web que vende (lo que nadie te cuenta)",
         excerpt: "Puedes tener la web más bonita de Soria y no conseguir un solo cliente nuevo con ella. O una web sencilla que te traiga 5 contactos al día. La diferencia está en estos elementos.",
-        date: "10 enero 2025",
+        date: "10 enero 2026",
         category: "Diseño Web",
         readTime: "5 min",
         image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&q=80&auto=format&fit=crop",
@@ -578,7 +578,7 @@ Comprueba la velocidad de tu web ahora mismo con Google PageSpeed Insights (es g
 
 ### 5. Adaptación perfecta al móvil
 
-En 2025, entre el 65% y el 75% del tráfico web viene de móvil. Si tu web no se ve perfecta en smartphone (botones táctiles, texto legible sin hacer zoom, imágenes que cargan bien), Google lo detecta y te penaliza en posicionamiento. Y los clientes simplemente se van.
+En 2026, entre el 65% y el 75% del tráfico web viene de móvil. Si tu web no se ve perfecta en smartphone (botones táctiles, texto legible sin hacer zoom, imágenes que cargan bien), Google lo detecta y te penaliza en posicionamiento. Y los clientes simplemente se van.
 
 Prueba tu web desde el móvil ahora mismo. ¿Puedes navegar cómodamente? ¿El botón de contacto es fácil de pulsar con el dedo? ¿Los textos se leen sin tener que pellizcar la pantalla?
 
@@ -613,7 +613,7 @@ En 48 horas tienes un informe detallado con las mejoras más impactantes, ordena
         slug: "google-maps-negocio-soria-guia",
         title: "Cómo aparecer en Google Maps si tienes un negocio en Soria (Guía paso a paso)",
         excerpt: "El 'Local Pack' de Google Maps es el resultado más valioso para un negocio local. Esta guía práctica te explica exactamente cómo conseguir aparecer ahí.",
-        date: "3 enero 2025",
+        date: "3 enero 2026",
         category: "SEO Local",
         readTime: "7 min",
         image: "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=800&q=80&auto=format&fit=crop",

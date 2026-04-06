@@ -18,7 +18,7 @@ const timeline = [
     { year: "2024", title: "Fundación de Numancia Digital", desc: "Nace con una misión: demostrar que desde Soria se puede liderar la transformación digital." },
     { year: "2024", title: "Primer cliente local", desc: "El primer negocio soriano confía en nosotros. Resultados en menos de 30 días." },
     { year: "2025", title: "Expansión de servicios", desc: "Añadimos automatizaciones con IA y gestión avanzada de redes sociales." },
-    { year: "2025+", title: "Referencia digital en Soria", desc: "El objetivo: ser la agencia de referencia para cada comercio y PYME de la provincia." },
+    { year: "2026+", title: "Referencia digital en Soria", desc: "El objetivo: ser la agencia de referencia para cada comercio y PYME de la provincia." },
 ];
 
 export default function SobreNosotrosClient() {
