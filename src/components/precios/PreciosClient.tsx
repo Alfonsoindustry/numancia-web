@@ -15,8 +15,8 @@ import { useState } from "react";
 const plans = [
     {
         name: "Paquete Base",
-        price: "900",
-        pricePerMonth: "75",
+        price: "1.000",
+        pricePerMonth: "83",
         period: "/año",
         desc: "Para el comercio que necesita empezar con fuerza.",
         features: [
@@ -32,8 +32,8 @@ const plans = [
     },
     {
         name: "Paquete Premium",
-        price: "1.000",
-        pricePerMonth: "83",
+        price: "1.200",
+        pricePerMonth: "100",
         period: "/año",
         desc: "La solución total para dominar el mercado soriano.",
         features: [

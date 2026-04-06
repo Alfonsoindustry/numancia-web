@@ -13,7 +13,7 @@ export const blogPosts: BlogPost[] = [
     {
         slug: "cuanto-cuesta-una-pagina-web-en-soria-2025",
         title: "¿Cuánto cuesta una página web en Soria? Guía de precios 2025",
-        excerpt: "Precios reales, sin humo. Desde 300€ de WordPress hasta los 900€/año de una web profesional con Next.js. Te explicamos qué incluye cada opción y qué conviene a tu negocio en Soria.",
+        excerpt: "Precios reales, sin humo. Desde 300€ de WordPress hasta los 1.000€/año de una web profesional con Next.js. Te explicamos qué incluye cada opción y qué conviene a tu negocio en Soria.",
         date: "2 Mar 2025",
         category: "Diseño Web",
         readTime: "6 min",
@@ -68,7 +68,7 @@ Para un negocio local en Soria, una inversión de 5.000-10.000€ en web tiene u
 
 ---
 
-### Opción 3: Agencia local especializada como Numancia Digital (900€/año, todo incluido)
+### Opción 3: Agencia local especializada como Numancia Digital (1.000€/año, todo incluido)
 
 Es el modelo que hemos desarrollado específicamente para el tejido empresarial de Soria: una web profesional, construida con **Next.js 15** (la tecnología que usan Netflix y el New York Times), con todo incluido en una cuota anual sin sorpresas.
 
@@ -84,7 +84,7 @@ Es el modelo que hemos desarrollado específicamente para el tejido empresarial 
 - Soporte directo por WhatsApp o teléfono
 - Sin contratos de permanencia abusivos
 
-**El coste real al año: 900€**, con una web que rinde mejor técnicamente que la inmensa mayoría de opciones del mercado.
+**El coste real al año: 1.000€**, con una web que rinde mejor técnicamente que la inmensa mayoría de opciones del mercado.
 
 ## ¿Qué incluye cada opción?
 
@@ -118,7 +118,7 @@ A continuación, una comparativa directa de lo que obtienes con cada opción:
 **Coste total año 1**
 - WordPress/Wix: 700-1.800€
 - Agencia tradicional: 3.500-15.000€ + mantenimiento
-- Numancia Digital: 900€ todo incluido
+- Numancia Digital: 1.000€ todo incluido
 
 ## El coste oculto de lo barato
 
@@ -164,7 +164,7 @@ Vamos al dato concreto: si tu negocio capta aunque sea 2 clientes nuevos al mes 
 
 Para una óptica en Soria, 2 clientes nuevos al mes pueden ser 300-600€ de facturación adicional. Para un abogado, puede ser 500-2.000€. Para un restaurante, puede ser llenar varias mesas adicionales cada semana.
 
-Una web de 900€/año que te trae 2 clientes al mes se paga sola en el primer mes. El resto del año es beneficio neto.
+Una web de 1.000€/año que te trae 2 clientes al mes se paga sola en el primer mes. El resto del año es beneficio neto.
 
 En Numancia Digital lo tenemos claro: no vendemos webs, vendemos resultados. Y en Soria, donde el tejido empresarial es de proximidad y la competencia digital todavía es baja en muchos sectores, una web bien construida puede marcar la diferencia entre que te encuentren a ti o a tu competencia.
 
@@ -221,7 +221,7 @@ El cliente soriano prefiere llamar o escribir un WhatsApp. Ponérselo fácil no 
 
 Si tu negocio factura 5.000€ al mes y el 20% de tus clientes potenciales te descarta al ver una web mala o inexistente, estás perdiendo 1.000€ al mes. Son 12.000€ al año de clientes que se van a la competencia.
 
-Una web de calidad en Numancia Digital cuesta desde 900€ (pago único). El retorno de esa inversión, si captas aunque sea 2 clientes nuevos al mes gracias a Google, se produce en el primer mes.
+Una web de calidad en Numancia Digital cuesta desde 1.000€ (pago único). El retorno de esa inversión, si captas aunque sea 2 clientes nuevos al mes gracias a Google, se produce en el primer mes.
 
 ## Cómo empezar: la Auditoría Digital Gratuita
 
@@ -556,7 +556,7 @@ Una web que convierte está construida pensando en ese objetivo, no en el ego de
 
 Cuando alguien llega a tu web, tiene una sola pregunta: "¿Estoy en el sitio correcto?". Si en 5 segundos no puede responder a esas tres cosas —qué haces, para quién y por qué deberías elegirte— se va.
 
-El error más común: un titular genérico como "Bienvenido a [Nombre de empresa]". No le dice nada al visitante. Un titular efectivo en Soria sería: "Diseño web para negocios locales en Soria | Webs en 48 horas desde 900€".
+El error más común: un titular genérico como "Bienvenido a [Nombre de empresa]". No le dice nada al visitante. Un titular efectivo en Soria sería: "Diseño web para negocios locales en Soria | Webs en 48 horas desde 1.000€".
 
 ### 2. Una sola llamada a la acción clara
 
