@@ -76,6 +76,33 @@ body {
   animation-play-state: paused;
 }
 
+/* ─── Hero CSS animations (no JS needed, instant first paint) ─── */
+@keyframes hero-slide-in {
+  from { opacity: 0; transform: translateX(-24px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+@keyframes hero-fade-scale {
+  from { opacity: 0; transform: scale(0.88); }
+  to   { opacity: 1; transform: scale(1); }
+}
+@keyframes hero-badge-left {
+  from { opacity: 0; transform: translateX(-16px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+@keyframes hero-badge-right {
+  from { opacity: 0; transform: translateX(16px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+@keyframes hero-badge-up {
+  from { opacity: 0; transform: translateX(-50%) translateY(14px); }
+  to   { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
+.hero-left    { animation: hero-slide-in   0.7s ease-out both; }
+.hero-right   { animation: hero-fade-scale 0.9s ease-out 0.15s both; }
+.hero-badge-l { animation: hero-badge-left  0.5s ease-out 0.4s both; }
+.hero-badge-r { animation: hero-badge-right 0.5s ease-out 0.55s both; }
+.hero-badge-b { animation: hero-badge-up    0.5s ease-out 0.7s both; }
+
 /* ─── Floating orbs ─── */
 @keyframes float-orb {
   0%, 100% { transform: translate(0, 0) scale(1); }

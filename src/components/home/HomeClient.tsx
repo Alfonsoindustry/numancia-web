@@ -214,11 +214,7 @@ export default function HomeClient() {
             {/* ─────────────── HERO ─────────────── */}
             <section className="relative pt-48 pb-20 px-6 z-10 hero-grid">
                 <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
-                    <motion.div
-                        initial={{ opacity: 0, x: -30 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.8, ease: "easeOut" }}
-                    >
+                    <div className="hero-left">
                         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-neon-orange/20 text-neon-orange text-sm font-bold mb-8">
                             <span className="w-2 h-2 rounded-full bg-neon-orange animate-pulse" />
                             Agencia Digital · Soria Km 0
@@ -251,54 +247,34 @@ export default function HomeClient() {
                             <span className="flex items-center gap-2"><CheckCircle2 size={14} className="text-neon-orange" /> Web en 48h</span>
                             <span className="flex items-center gap-2"><CheckCircle2 size={14} className="text-neon-orange" /> Auditoría 0€</span>
                         </div>
-                    </motion.div>
+                    </div>
 
                     {/* Logo hero con badges flotantes */}
-                    <motion.div
-                        initial={{ opacity: 0, scale: 0.85 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 1.2, ease: "easeOut", delay: 0.2 }}
-                        className="relative flex items-center justify-center"
-                    >
+                    <div className="hero-right relative flex items-center justify-center">
                         <div className="absolute inset-0 bg-neon-orange/15 rounded-full blur-[100px] scale-75" />
 
                         {/* Badge: disponibilidad */}
-                        <motion.div
-                            initial={{ opacity: 0, x: -20 }}
-                            animate={{ opacity: 1, x: 0 }}
-                            transition={{ delay: 0.8 }}
-                            className="absolute top-4 -left-4 glass rounded-2xl px-4 py-3 border border-white/10 z-10 hidden sm:block"
-                        >
+                        <div className="hero-badge-l absolute top-4 -left-4 glass rounded-2xl px-4 py-3 border border-white/10 z-10 hidden sm:block">
                             <div className="flex items-center gap-2 text-xs font-bold">
                                 <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
                                 Disponibles en Soria
                             </div>
-                        </motion.div>
+                        </div>
 
                         {/* Badge: valoraciones */}
-                        <motion.div
-                            initial={{ opacity: 0, x: 20 }}
-                            animate={{ opacity: 1, x: 0 }}
-                            transition={{ delay: 1.0 }}
-                            className="absolute bottom-4 -right-4 glass rounded-2xl px-4 py-3 border border-white/10 z-10 hidden sm:block"
-                        >
+                        <div className="hero-badge-r absolute bottom-4 -right-4 glass rounded-2xl px-4 py-3 border border-white/10 z-10 hidden sm:block">
                             <div className="flex gap-0.5 mb-1">
                                 {[...Array(5)].map((_, i) => (
                                     <Star key={i} size={12} className="text-neon-orange fill-neon-orange" />
                                 ))}
                             </div>
                             <div className="text-xs text-text-slate">Agencia de confianza</div>
-                        </motion.div>
+                        </div>
 
                         {/* Badge: 48h */}
-                        <motion.div
-                            initial={{ opacity: 0, y: 20 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ delay: 1.2 }}
-                            className="absolute -bottom-4 left-1/2 -translate-x-1/2 glass rounded-2xl px-4 py-3 border border-neon-orange/20 z-10 hidden sm:block"
-                        >
+                        <div className="hero-badge-b absolute -bottom-4 left-1/2 -translate-x-1/2 glass rounded-2xl px-4 py-3 border border-neon-orange/20 z-10 hidden sm:block">
                             <div className="text-neon-orange font-outfit font-bold text-sm">Web en 48h</div>
-                        </motion.div>
+                        </div>
 
                         <Image
                             src="/brand/logo_web_512x512.png"
@@ -308,7 +284,7 @@ export default function HomeClient() {
                             className="relative w-full max-w-[380px] mx-auto drop-shadow-[0_0_60px_rgba(255,138,0,0.35)] select-none"
                             priority
                         />
-                    </motion.div>
+                    </div>
                 </div>
 
                 {/* Scroll indicator */}
