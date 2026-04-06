@@ -77,6 +77,7 @@ export default function BlogClient() {
                                             src={featured.image}
                                             alt={featured.title}
                                             fill
+                                            priority
                                             className="object-cover group-hover:scale-105 transition-transform duration-700"
                                             sizes="(max-width: 1024px) 0px, (max-width: 1280px) 45vw, 500px"
                                         />

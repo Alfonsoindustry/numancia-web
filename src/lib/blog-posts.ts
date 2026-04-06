@@ -17,7 +17,7 @@ export const blogPosts: BlogPost[] = [
         date: "2 Mar 2026",
         category: "Diseño Web",
         readTime: "6 min",
-        image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=85&auto=format&fit=crop",
+        image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=75&auto=format&fit=crop",
         content: `
 ## Por qué varía tanto el precio de una web
 
