@@ -173,19 +173,22 @@ const steps = [
 
 const testimonials = [
     {
-        initials: "MG",
+        initial: "M",
+        color: "#4285F4",
         name: "María G.",
         stars: 5,
         text: "Pasé de no tener web a tener clientes que me llegan por Google. En menos de una semana. No me lo creía hasta que lo vi.",
     },
     {
-        initials: "RM",
+        initial: "R",
+        color: "#34A853",
         name: "Roberto M.",
         stars: 5,
         text: "La mejor inversión del año. Por lo que antes pagaba en publicidad en una tarde, ahora tengo una web entera funcionando.",
     },
     {
-        initials: "LP",
+        initial: "L",
+        color: "#EA4335",
         name: "Laura P.",
         stars: 4,
         text: "Muy buena experiencia. El proceso fue rápido y el resultado final es exactamente lo que buscaba para mi negocio.",
@@ -545,8 +548,11 @@ export default function HomeClient() {
                                 </div>
                                 <p className="text-white/80 leading-relaxed mb-8 italic">"{t.text}"</p>
                                 <div className="flex items-center gap-4">
-                                    <div className="w-12 h-12 rounded-full bg-neon-orange/20 border border-neon-orange/30 flex items-center justify-center font-outfit font-bold text-neon-orange">
-                                        {t.initials}
+                                    <div
+                                        className="w-12 h-12 rounded-full flex items-center justify-center font-outfit font-bold text-white text-lg select-none"
+                                        style={{ backgroundColor: t.color }}
+                                    >
+                                        {t.initial}
                                     </div>
                                     <div className="font-bold text-white">{t.name}</div>
                                 </div>
