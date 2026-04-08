@@ -173,11 +173,11 @@ const steps = [
 
 const testimonials = [
     {
-        initial: "M",
-        color: "#4285F4",
-        name: "María G.",
+        initial: "O",
+        color: "#FF8A00",
+        name: "Óptica Perlado · Soria",
         stars: 5,
-        text: "Pasé de no tener web a tener clientes que me llegan por Google. En menos de una semana. No me lo creía hasta que lo vi.",
+        text: "Lo que antes nos llevaba media mañana del viernes ahora está listo automáticamente cada primer día del mes. 12 horas a la semana recuperadas.",
     },
     {
         initial: "R",
