@@ -718,6 +718,191 @@ En Numancia Digital hacemos la configuración y optimización completa de tu Goo
 **Primera consulta gratuita.** Sin compromiso, con valor real.
         `
     },
+    {
+        slug: "marketing-digital-para-negocios-en-soria-guia-2026",
+        title: "Marketing digital para negocios en Soria: guía práctica 2026",
+        excerpt: "Qué funciona de verdad para captar clientes en Soria: SEO local, Google Business, redes sociales y web. Sin tecnicismos, sin humo. Solo lo que mueve el negocio.",
+        date: "8 Abr 2026",
+        category: "Marketing Digital",
+        readTime: "8 min",
+        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=75&auto=format&fit=crop",
+        content: `
+## Marketing digital en Soria: el contexto importa
+
+Hacer marketing digital en Soria no es igual que hacerlo en Madrid o Barcelona. El mercado es diferente, los clientes son diferentes y, sobre todo, las herramientas que funcionan son diferentes.
+
+Soria tiene ~40.000 habitantes en capital y una provincia activa con mucho comercio local, hostelería, servicios profesionales y turismo rural creciente. En ese contexto, la estrategia digital correcta no es la que usa una tienda de Madrid — es la que aprovecha lo específico de ser un negocio de Soria.
+
+En esta guía te explicamos qué canales digitales funcionan de verdad para negocios locales en Soria, en qué orden abordarlos y qué esperar de cada uno.
+
+---
+
+## Los 5 pilares del marketing digital local en Soria
+
+### 1. Google Business Profile (el más importante, y el más infravalorado)
+
+Si solo puedes hacer una cosa de marketing digital, que sea esta: optimizar tu ficha de Google Business Profile (antes llamado Google My Business).
+
+Cuando alguien busca "fisioterapeuta Soria", "restaurante Soria centro" o "fontanero urgente Soria", lo primero que ve Google no son las webs — es el **Local Pack**: el mapa con los 3 negocios que más relevantes considera. Aparecer ahí es el activo digital más valioso para cualquier negocio local.
+
+**Qué necesita tu ficha para rendir bien:**
+- Categoría principal bien elegida (no "empresa", sino "clínica de fisioterapia")
+- Descripción con las palabras clave por las que quieres aparecer
+- Horario actualizado (Google penaliza fichas con horario desconocido)
+- Al menos 10 fotos propias, actualizadas
+- Responder a **todas** las reseñas (positivas y negativas)
+- Publicar una actualización a la semana (como un mini-blog en Google)
+
+**Coste:** Gratis. Solo requiere tiempo.
+
+**Tiempo hasta resultados:** 2-4 meses con una estrategia activa de reseñas.
+
+---
+
+### 2. Página web propia (tu base de operaciones)
+
+Una ficha de Google Business sin web es como un escaparate sin tienda. Funciona para captar la atención, pero pierde clientes en el momento en que quieren saber más.
+
+La web tiene dos funciones principales en el marketing digital local:
+
+**Función 1 — Credibilidad:** Cuando alguien te ve en Google o recibe tu tarjeta, va a buscar tu web. Si no tienes, o si tienes una web que se ve mal en móvil o que parece de 2012, pierdes ese cliente en 10 segundos. En Soria, donde la confianza y el boca a boca son fundamentales, la credibilidad digital importa más de lo que parece.
+
+**Función 2 — SEO a largo plazo:** Una web bien construida va acumulando autoridad en Google con el tiempo. Mientras tu ficha de Google Business captura búsquedas locales inmediatas, tu web posiciona para búsquedas más específicas y de mayor intención de compra.
+
+**Lo que buscar en una web para un negocio en Soria:**
+- Velocidad de carga inferior a 2 segundos (crítico para móvil)
+- Diseño adaptado a móvil (el 80% de búsquedas locales son desde el teléfono)
+- SEO técnico integrado desde el código (no añadido como parche)
+- Formulario de contacto que llegue a tu correo
+- Información de contacto visible en todas las páginas
+
+---
+
+### 3. SEO local: aparecer cuando te buscan
+
+El SEO local es el proceso de optimizar tu presencia digital para aparecer en búsquedas geográficas. "Abogado Soria", "academia inglés Soria centro", "hotel rural provincia de Soria" — estas son búsquedas de alta intención de compra, y el que aparece primero se lleva la llamada.
+
+**Las 3 palancas del SEO local:**
+
+**Palanca 1 — Google Business Profile** (ya la hemos visto): el factor más directo para el Local Pack.
+
+**Palanca 2 — SEO en la web:** Cada página de tu web debe estar optimizada para las búsquedas que te interesan. Esto significa que la página de inicio debe mencionar tu ciudad y servicio con naturalidad, que tengas una página específica por cada servicio y que el código de la web no tenga errores técnicos que penalicen el posicionamiento.
+
+**Palanca 3 — Reseñas y menciones locales:** Google considera las reseñas como señal de relevancia local. 50 reseñas con 4,5 de media en un negocio de Soria es un activo enorme frente a competidores con 10 reseñas. Pedir reseñas activamente a clientes satisfechos es la estrategia de SEO local más infravalorada que existe.
+
+**Tiempo hasta resultados:** 3-6 meses para posiciones estables. Es una inversión a largo plazo, pero los resultados son recurrentes y no dependen de un presupuesto publicitario mensual.
+
+---
+
+### 4. Redes sociales: elegir bien antes de dispersarse
+
+El error más común de los negocios en Soria con las redes sociales es intentar estar en todas: Instagram, Facebook, TikTok, LinkedIn. El resultado habitual es que ninguna funciona bien porque no hay recursos para mantener todas activas.
+
+**La estrategia correcta para negocios locales en Soria:**
+
+Elige **una o dos** redes en función de tu sector y cliente objetivo:
+
+- **Instagram:** Ideal para negocios con componente visual fuerte (restaurantes, comercios, salud estética, academias de danza). El contenido que mejor funciona: proceso detrás del negocio (fotos del día a día, del equipo, de cómo se hace lo que haces), no publicidad directa.
+
+- **Facebook:** Sigue siendo relevante en Soria para negocios con público de 35-60 años. Grupos locales de Facebook (grupos de vecinos, grupos de comercio local) tienen mucho alcance orgánico todavía.
+
+- **LinkedIn:** Para servicios profesionales (gestorías, abogados, consultoras, agencias). Tu cliente es empresario o directivo, y LinkedIn es donde está.
+
+- **TikTok:** Solo si tienes tiempo y ganas de crear vídeo de forma constante. Para negocios de hostelería o comercio con público joven puede ser muy potente, pero requiere dedicación real.
+
+**Lo que NO funciona:** Publicar solo ofertas y promociones. Las redes sociales son para construir confianza y comunidad, no para hacer publicidad directa. El 80% del contenido debe ser útil o entretenido; el 20%, comercial.
+
+---
+
+### 5. Email marketing y seguimiento de clientes
+
+El canal de marketing digital más rentable que existe — y el más ignorado por negocios locales — es el email.
+
+Si tienes una base de datos de clientes actuales y pasados, tienes el activo de marketing más valioso que puedes tener. Una lista de 500 personas que ya te conocen y te han dado su email vale más que 10.000 seguidores en Instagram que no te conocen de nada.
+
+**Casos de uso para negocios en Soria:**
+
+- **Clínicas y salud:** Recordatorio de revisión anual, newsletter con consejos de salud, aviso de nuevos servicios
+- **Restaurantes:** Newsletter mensual con menú especial, eventos, reserva anticipada
+- **Academias:** Aviso de inicio de curso, nuevos grupos, materiales complementarios
+- **Comercios:** Aviso de nueva colección, promociones exclusivas para clientes, novedades
+
+**Herramientas para empezar gratis:** Mailchimp o Brevo tienen planes gratuitos hasta 500-1.000 contactos, más que suficiente para empezar.
+
+---
+
+## El orden correcto para implementarlo
+
+Si partes desde cero, este es el orden que recomendamos para negocios en Soria:
+
+**Mes 1:**
+1. Optimizar Google Business Profile (o crearlo si no existe)
+2. Pedir reseñas activamente a clientes actuales (objetivo: 10 reseñas en 30 días)
+3. Si no tienes web, empezar a planificarla
+
+**Mes 2-3:**
+4. Tener web propia operativa, bien construida y rápida
+5. Elegir una red social y publicar con consistencia (3 veces/semana mínimo)
+6. Empezar a recopilar emails de clientes
+
+**Mes 4-6:**
+7. Blog o contenido SEO si tienes tiempo (artículos sobre tu sector en Soria)
+8. Considera Google Ads solo cuando ya tengas web sólida y Google Business optimizado
+
+---
+
+## ¿Cuánto cuesta hacer marketing digital en Soria?
+
+Depende mucho de si lo haces tú o lo externalizas. Un resumen realista:
+
+**Hecho por ti:**
+- Google Business Profile: gratis (coste: tiempo, ~2h/mes)
+- Web básica: desde 1.000€/año con agencia local como Numancia Digital
+- Redes sociales: gratis (coste: tiempo, ~3h/semana)
+- Email marketing: gratis hasta 1.000 contactos con Mailchimp o Brevo
+
+**Externalizado a una agencia:**
+- Gestión integral: 500-1.500€/mes dependiendo del volumen de trabajo
+- Solo SEO: 300-800€/mes
+- Solo redes sociales: 300-600€/mes
+
+**Lo más eficiente para un negocio local en Soria:** hacer el trabajo estratégico con apoyo de una agencia (web, SEO técnico, configuración) y gestionar el día a día tú mismo (responder reseñas, publicar en redes, actualizar Google Business).
+
+---
+
+## Cómo saber si tu marketing digital está funcionando
+
+Los KPIs que importan para un negocio local en Soria:
+
+1. **Posición en Google para búsquedas locales:** ¿Apareces en el Local Pack para las búsquedas de tu sector en Soria?
+2. **Llamadas desde Google:** Google Business Profile te muestra cuántas llamadas recibes directamente desde tu ficha
+3. **Tráfico web desde Google:** Si tienes web con Google Analytics, cuántas visitas llegan desde búsquedas orgánicas
+4. **Número de reseñas nuevas al mes:** Indicador indirecto de actividad y satisfacción de clientes
+
+Lo que NO medir para empezar: seguidores en redes sociales, impresiones, alcance. Estas métricas de vanidad no se convierten en clientes directamente.
+
+---
+
+## Conclusión: el marketing digital en Soria no es complicado, es constante
+
+El mayor error que cometen los negocios en Soria con el marketing digital es buscar resultados rápidos o la solución mágica. No existe. Lo que sí existe es un proceso claro:
+
+1. Tener presencia sólida donde te buscan (Google Business + web)
+2. Ser relevante para las búsquedas de tu sector en Soria (SEO local)
+3. Construir confianza antes de intentar vender (redes, contenido, reseñas)
+4. Mantener el contacto con quien ya te conoce (email, comunidad)
+
+Esto no requiere grandes presupuestos. Requiere consistencia y empezar por lo que más impacto tiene.
+
+---
+
+## ¿Quieres saber cómo está tu negocio en Soria digitalmente?
+
+En Numancia Digital hacemos auditorías digitales gratuitas para negocios locales de Soria. En 3 días te decimos exactamente cómo estás posicionado, qué está fallando y qué 3 cambios concretos mejorarían tu captación de clientes.
+
+**Sin compromiso. Sin coste. El informe es tuyo.**
+        `
+    },
 ];
 
 export function getBlogPost(slug: string): BlogPost | undefined {
