@@ -56,10 +56,10 @@ const servicios = [
 
 /* ─── Métricas destacadas ─── */
 const metricas = [
-    { valor: "12h", label: "ahorradas por semana", icono: Clock },
-    { valor: "500+", label: "productos migrados", icono: Database },
-    { valor: "100%", label: "informes automatizados", icono: BarChart3 },
-    { valor: "0", label: "errores en facturación", icono: CheckCircle },
+    { valor: "+150%", label: "visitas web orgánicas", icono: TrendingUp },
+    { valor: "#1", label: "en Google para su sector en Soria", icono: BarChart3 },
+    { valor: "3 meses", label: "hasta ver los primeros resultados", icono: Clock },
+    { valor: "0€", label: "en publicidad de pago", icono: CheckCircle },
 ];
 
 /* ─── Línea de tiempo del proyecto ─── */
@@ -204,11 +204,11 @@ export default function CasosClient() {
                             {/* Descripción general */}
                             <div className="p-8 md:p-12 border-b border-white/5">
                                 <p className="text-text-slate text-lg leading-relaxed max-w-3xl">
-                                    Óptica Perlado lleva años siendo un referente en Soria. Cuando llegaron a nosotros,
-                                    gestionaban la facturación, los pedidos y el catálogo de producto de forma manual,
-                                    con hojas de cálculo y procesos que consumían horas cada semana.
-                                    Hoy, sus procesos clave son automáticos y su equipo dedica ese tiempo a lo que
-                                    realmente importa: atender a sus clientes.
+                                    Óptica Perlado lleva años siendo un referente en Soria, pero su presencia digital
+                                    no reflejaba lo que son en la calle. Cuando llegaron a nosotros apenas aparecían
+                                    en Google. Trabajamos su SEO local desde cero: ficha de Google Business, estructura
+                                    web, contenido optimizado y autoridad de dominio. En tres meses su tráfico orgánico
+                                    creció un 150% y hoy son el primer resultado cuando alguien busca una óptica en Soria.
                                 </p>
                             </div>
 
@@ -287,9 +287,9 @@ export default function CasosClient() {
                                         "
                                     </span>
                                     <p className="text-lg text-white/80 leading-relaxed relative z-10 pt-4">
-                                        Lo que antes nos llevaba media mañana del viernes ahora está listo
-                                        automáticamente cada primer día del mes. El programa de productos
-                                        nos ha ahorrado semanas de trabajo al año.
+                                        Antes ni aparecíamos cuando alguien buscaba una óptica en Soria.
+                                        Ahora somos los primeros. Las visitas a la web se multiplicaron
+                                        y lo notamos en la tienda: hay clientes que nos dicen que nos encontraron por Google.
                                     </p>
                                     <p className="text-neon-orange text-sm font-bold mt-4">
                                         — Equipo de Óptica Perlado, Soria

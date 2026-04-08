@@ -142,8 +142,7 @@ export default function AuditoriaClient() {
                                 ))}
                             </div>
                             <p className="text-white/80 text-sm leading-relaxed italic mb-4">
-                                "Lo que antes nos llevaba media mañana del viernes ahora está listo
-                                automáticamente cada primer día del mes. 12 horas a la semana recuperadas."
+                                "Antes ni aparecíamos en Google. Ahora somos los primeros cuando alguien busca una óptica en Soria. Las visitas a la web se multiplicaron y lo notamos en la tienda."
                             </p>
                             <div className="flex items-center gap-3">
                                 <div className="w-9 h-9 rounded-full bg-neon-orange flex items-center justify-center font-bold text-black text-sm flex-shrink-0">
