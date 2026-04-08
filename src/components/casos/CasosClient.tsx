@@ -287,9 +287,9 @@ export default function CasosClient() {
                                         "
                                     </span>
                                     <p className="text-lg text-white/80 leading-relaxed relative z-10 pt-4">
-                                        Antes ni aparecíamos cuando alguien buscaba una óptica en Soria.
-                                        Ahora somos los primeros. Las visitas a la web se multiplicaron
-                                        y lo notamos en la tienda: hay clientes que nos dicen que nos encontraron por Google.
+                                        Ahora somos los primeros cuando alguien busca una óptica en Soria.
+                                        Las visitas a la web se multiplicaron y lo notamos en la tienda:
+                                        hay clientes que nos dicen que nos encontraron por Google.
                                     </p>
                                     <p className="text-neon-orange text-sm font-bold mt-4">
                                         — Equipo de Óptica Perlado, Soria

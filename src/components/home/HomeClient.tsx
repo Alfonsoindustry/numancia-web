@@ -177,7 +177,7 @@ const testimonials = [
         color: "#FF8A00",
         name: "Óptica Perlado · Soria",
         stars: 5,
-        text: "Antes ni aparecíamos en Google. Ahora somos los primeros cuando alguien busca una óptica en Soria. Las visitas a la web se multiplicaron y lo notamos en la tienda.",
+        text: "Ahora somos los primeros cuando alguien busca una óptica en Soria. Las visitas a la web se multiplicaron y lo notamos en la tienda.",
     },
     {
         initial: "R",
