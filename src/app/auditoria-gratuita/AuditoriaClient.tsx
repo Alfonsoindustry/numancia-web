@@ -96,7 +96,7 @@ export default function AuditoriaClient() {
                 {/* ── HERO ── */}
                 <div className="text-center mb-14">
                     <span className="inline-block text-neon-orange text-xs font-bold tracking-[0.25em] uppercase mb-4 bg-neon-orange/10 px-4 py-2 rounded-full border border-neon-orange/20">
-                        Solo 5 plazas al mes · Sin compromiso
+                        Gratis y sin compromiso · Respuesta en 3 días
                     </span>
                     <h1 className="font-outfit text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-5">
                         ¿Por qué tu negocio{" "}
