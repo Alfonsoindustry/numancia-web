@@ -903,6 +903,158 @@ En Numancia Digital hacemos auditorías digitales gratuitas para negocios locale
 **Sin compromiso. Sin coste. El informe es tuyo.**
         `
     },
+    {
+        slug: "posicionamiento-seo-soria-como-salir-primero-en-google-2026",
+        title: "Posicionamiento SEO en Soria: cómo salir primero en Google si tienes un negocio local",
+        excerpt: "La mayoría de negocios en Soria no aparecen en Google porque nadie les ha explicado cómo funciona el SEO local. Aquí tienes la guía práctica: qué es, qué afecta y qué puedes hacer hoy mismo.",
+        date: "8 abr 2026",
+        category: "SEO",
+        readTime: "7 min",
+        image: "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?w=800&q=75&auto=format&fit=crop",
+        content: `
+## El problema real de los negocios en Soria con Google
+
+Busca ahora mismo "fisioterapeuta en Soria" o "fontanero Soria" en Google. Lo que aparece en los tres primeros resultados acapara el 75% de los clics. El cuarto resultado ya recibe menos del 10%. Lo que aparece en página dos recibe prácticamente cero visitas.
+
+Esto no es una metáfora. Es la realidad del comportamiento del usuario en buscadores, y explica por qué dos negocios idénticos en calidad y precio pueden tener resultados completamente distintos: uno sale primero en Google, el otro no existe para el que busca.
+
+El posicionamiento SEO en Soria no es algo reservado a grandes empresas con presupuestos enormes. De hecho, en una ciudad como Soria, la competencia digital es todavía muy baja en la mayoría de sectores. Eso significa que quien se mueva antes tiene una ventaja enorme y duradera.
+
+## Qué significa exactamente SEO local
+
+SEO son las siglas de Search Engine Optimization, que en castellano vendría a ser optimización para motores de búsqueda. En la práctica, es el conjunto de acciones que hacen que Google considere que tu negocio es la respuesta más relevante cuando alguien busca lo que tú ofreces en Soria.
+
+El SEO local es una variante específica: el que determina qué negocios aparecen cuando alguien busca algo con intención geográfica. "Dentista Soria", "restaurante con menú en Soria", "academia de inglés Soria". En estas búsquedas, Google muestra primero el Local Pack, esos tres resultados con mapa que aparecen antes de los resultados web normales.
+
+Aparecer en el Local Pack es el equivalente digital a tener el local en la calle más transitada del centro de Soria. La visibilidad es máxima y el coste es cero, si sabes cómo funciona.
+
+## Los tres factores que determinan tu posición en Google
+
+Google no es arbitrario. Sigue criterios claros para decidir qué negocios merecen aparecer primero. Entender estos criterios es el primer paso para mejorar tu posición.
+
+El primero es la relevancia. Google analiza si tu negocio realmente ofrece lo que el usuario está buscando. Esto depende del contenido de tu web, de las palabras clave que aparecen en ella, de cómo describes tus servicios y de si tu ficha de Google Business Profile está completa y bien categorizada.
+
+El segundo es la proximidad. Cuando alguien busca desde Soria, Google prioriza negocios físicamente cercanos al usuario. Aquí tienes la ventaja de estar en Soria: para búsquedas locales, un negocio de Soria siempre partirá con ventaja sobre uno de Valladolid o Madrid.
+
+El tercero es la autoridad o la popularidad. Google interpreta que un negocio es relevante si otras webs hablan de él, si tiene reseñas positivas, si su web recibe visitas. Es el factor más difícil de trabajar a corto plazo, pero el más decisivo a largo plazo.
+
+## Qué puedes hacer para posicionarte mejor en Soria
+
+La buena noticia es que la mayoría de negocios en Soria no están haciendo prácticamente nada de SEO. Eso significa que hacer las cosas básicas bien ya te pone por delante de la mayoría de tu competencia local.
+
+Lo primero y más urgente es tener la ficha de Google Business Profile completa y actualizada. Nombre exacto del negocio, dirección, teléfono, horario, categoría correcta, descripción de servicios con las palabras que usa tu cliente, fotos actuales del local y del equipo. Esta ficha es gratuita y es lo que determina si apareces o no en el Local Pack.
+
+Lo segundo es conseguir reseñas de clientes reales. Google interpreta las reseñas como una señal de confianza y actividad. Un negocio con 15 reseñas recientes siempre tendrá ventaja sobre uno con 3 reseñas antiguas. La forma más efectiva de conseguirlas es simplemente pedirlas: un mensaje de WhatsApp a clientes satisfechos con el enlace directo a tu ficha de Google.
+
+Lo tercero es tener una web que técnicamente le guste a Google. Velocidad de carga inferior a 2 segundos, estructura clara, textos que incluyan las búsquedas que usa tu cliente, versión móvil perfecta. Google evalúa todo esto cuando decide si tu web merece aparecer en los primeros resultados.
+
+Lo cuarto, y quizás lo más subestimado, es el contenido. Una web con artículos de blog que respondan preguntas reales de tus clientes en Soria tiene mucho más recorrido en Google que una web estática con 5 páginas. Cada artículo es una nueva oportunidad de aparecer para búsquedas relevantes.
+
+## Cuánto tiempo tarda el SEO en dar resultados
+
+Esta es la pregunta más frecuente y la que más decepciones genera cuando la respuesta no es la esperada. El SEO no es publicidad. No funciona en 24 horas ni en una semana.
+
+Para un negocio local en Soria que empieza desde cero, los primeros movimientos visibles en posiciones suelen verse entre las 4 y las 12 semanas de trabajo consistente. Aparecer en el top 3 de las búsquedas más competidas puede llevar entre 6 meses y un año.
+
+Pero hay matices importantes. En Soria, la competencia digital en muchos sectores es tan baja que los resultados pueden llegar antes. Hemos visto negocios locales aparecer en el Local Pack en 6-8 semanas simplemente por optimizar bien su ficha de Google y tener una web decente.
+
+Lo que sí es inmediato son las visitas de las búsquedas de marca: cuando alguien busca directamente el nombre de tu negocio, aparecer en el primer resultado es algo que se consigue desde el primer día con la configuración básica correcta.
+
+## SEO versus publicidad en Google: cuál elegir
+
+La pregunta no es cuál es mejor en abstracto, sino cuál conviene en cada momento y con qué presupuesto.
+
+La publicidad en Google Ads te da visibilidad inmediata. Pagas por cada clic y apareces arriba mientras sigas pagando. En el momento que dejas de invertir, desapareces. Para Soria, el coste por clic en sectores locales está entre 0,50€ y 3€ dependiendo de la competencia.
+
+El SEO orgánico tarda más en arrancar pero sus resultados son permanentes y gratuitos. Una vez que tu web ocupa el primer puesto para "dentista Soria", esa posición te genera clics sin coste indefinidamente, mientras la mantengas trabajada.
+
+La estrategia más inteligente para un negocio que empieza en Soria suele ser usar Ads durante los primeros 3-6 meses para generar visibilidad mientras el SEO orgánico va madurando, y reducir progresivamente la inversión en publicidad a medida que el posicionamiento orgánico gana terreno.
+
+## Cómo saber si tu negocio en Soria tiene problemas de SEO
+
+Hay señales claras que indican que tu posicionamiento necesita trabajo. Si buscas en Google el servicio que ofreces seguido de "Soria" y no apareces en los tres primeros resultados, tienes un problema de SEO. Si tu web tarda más de 3 segundos en cargar en móvil, tienes un problema técnico que Google penaliza. Si tu ficha de Google Business Profile tiene información incompleta o desactualizada, estás perdiendo posiciones cada día.
+
+En Numancia Digital hacemos auditorías SEO gratuitas para negocios en Soria. En el informe analizamos tu posición actual, la de tu competencia directa, los errores técnicos de tu web y las palabras clave por las que podrías aparecer y no apareces. Es el punto de partida para cualquier estrategia de posicionamiento seria.
+
+El SEO en Soria no es complicado. Es constante. Y quien empieza antes, lleva la delantera durante años.
+        `
+    },
+    {
+        slug: "tienda-online-soria-como-vender-por-internet-2026",
+        title: "Tienda online en Soria: cómo vender por internet sin arruinarte en el intento",
+        excerpt: "Montar una tienda online en Soria no es tan caro ni tan complicado como parece, pero tampoco tan sencillo como te lo venden. Te explicamos qué necesitas realmente, cuánto cuesta y los errores que debes evitar.",
+        date: "8 abr 2026",
+        category: "E-commerce",
+        readTime: "6 min",
+        image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=75&auto=format&fit=crop",
+        content: `
+## Por qué cada vez más negocios de Soria quieren vender online
+
+La pandemia aceleró algo que ya venía ocurriendo: el consumidor soriano compra por internet. No solo en Amazon o El Corte Inglés, también en tiendas locales que han sabido adaptarse. Una ferretería de la calle Collado que vende tornillos y herramientas online. Una tienda de productos artesanales de Soria que envía a toda España. Una academia que cobra sus clases por internet antes de que el alumno pise el local.
+
+El comercio electrónico ya no es el futuro. Es el presente. Y los negocios en Soria que han tardado en moverse están empezando a notar que su competencia, a veces de otras provincias, les está quitando clientes que antes compraban localmente.
+
+La buena noticia es que montar una tienda online ya no requiere una inversión de 20.000€ ni un equipo de desarrolladores. La mala es que tampoco es tan simple como "en un fin de semana lo tienes listo", como prometen algunas plataformas de construcción automática.
+
+## Qué necesita realmente una tienda online para funcionar
+
+Hay una diferencia fundamental entre tener una tienda online y tener una tienda online que vende. La primera es técnica: se puede montar en horas. La segunda requiere pensar en el usuario, en el proceso de compra, en la confianza que transmite la web y en cómo llega el cliente hasta ella.
+
+Lo que cualquier tienda online necesita para funcionar de verdad es, primero, una experiencia de compra clara y rápida. El cliente tiene que poder encontrar lo que busca, entender el precio, añadirlo al carrito y pagar en menos de 3 minutos. Cada fricción en ese proceso es una venta perdida. Estudios de usabilidad muestran que el 70% de los carritos de compra se abandonan antes de finalizar el pago.
+
+Lo segundo es transmitir confianza. Comprar online implica dar datos de tarjeta a alguien que no conoces físicamente. Una tienda con diseño anticuado, sin política de devoluciones visible, sin certificado de seguridad SSL o sin datos de contacto claros genera desconfianza aunque el producto sea excelente. En Soria, donde la mayoría de tus compradores locales te conocen, esto puede ser menos crítico. Pero si quieres vender fuera de Soria, la confianza lo es todo.
+
+Lo tercero es la velocidad. Una tienda online que tarda 5 segundos en cargar pierde más de la mitad de sus visitantes antes de que vean un solo producto. Google también penaliza las webs lentas y te baja en los resultados de búsqueda, que es de donde viene la mayoría del tráfico orgánico.
+
+Lo cuarto, y esto es lo que más se subestima, es el tráfico. Una tienda online sin visitas no vende nada. Da igual lo bonita que esté. Necesitas una estrategia para llevar compradores potenciales a tu web: SEO, redes sociales, publicidad, lista de email, lo que sea. Sin tráfico, no hay ventas.
+
+## Las opciones para montar una tienda online en Soria
+
+Las plataformas más populares para tiendas online son Shopify, WooCommerce (que funciona sobre WordPress) y PrestaShop. Cada una tiene sus ventajas y sus costes reales, que conviene conocer antes de decidir.
+
+Shopify es la más sencilla de gestionar. No necesitas conocimientos técnicos, tiene muchas integraciones y el soporte es bueno. El problema es el coste mensual: el plan básico cuesta 29 dólares al mes, más un porcentaje de cada venta, más los temas premium, más las apps que necesitas. Al final del año, el coste puede superar los 600-800€ solo en plataforma, sin contar el diseño ni el desarrollo.
+
+WooCommerce es gratuito como plugin, pero funciona sobre WordPress, que requiere hosting, actualizaciones constantes y una gestión técnica que no todo el mundo está preparado para hacer. Los plugins adicionales que necesita una tienda mínimamente funcional (pasarelas de pago, gestión de envíos, facturación automática) pueden sumar 200-400€ al año.
+
+La opción que nosotros recomendamos para negocios en Soria que quieren una tienda seria sin complicaciones técnicas es una solución a medida integrada directamente en la web corporativa, con la pasarela de pago (Stripe o Redsys), gestión de stock básica y proceso de compra optimizado. El coste de desarrollo es mayor al principio, pero el resultado es una tienda más rápida, más segura y sin costes mensuales recurrentes de plataforma.
+
+## Cuánto cuesta una tienda online en Soria
+
+La respuesta honesta es: depende. Pero te damos rangos reales para que puedas comparar.
+
+Una tienda básica en Shopify o WooCommerce, con diseño de plantilla y configuración estándar, puede estar lista por entre 800€ y 2.000€ de inversión inicial, más los costes mensuales de la plataforma. Funciona para validar el modelo y empezar a vender, pero tiene limitaciones de velocidad, personalización y SEO técnico.
+
+Una tienda media, con diseño personalizado, integración de pasarela de pago, gestión de productos, fichas de producto optimizadas para SEO y proceso de compra trabajado, está entre 2.000€ y 4.000€ dependiendo del número de productos y las funcionalidades requeridas.
+
+Una tienda avanzada, con múltiples categorías, filtros complejos, integración con sistema de gestión, sincronización de stock con tienda física y estrategia SEO desde el primer día, puede superar los 5.000-8.000€.
+
+En Numancia Digital trabajamos tiendas online integradas en nuestros planes desde 1.500€ al año para catálogos de hasta 50 productos. La ventaja es que la tienda está construida con la misma tecnología que la web (Next.js 15), lo que garantiza velocidad de carga óptima y SEO técnico desde el primer día.
+
+## Los errores más comunes al montar una tienda online en Soria
+
+El primero es lanzar antes de tener las fichas de producto completas. Una ficha de producto sin foto de calidad, sin descripción detallada y sin precio claro no vende. Parece obvio, pero muchas tiendas se lanzan con 30 productos de los cuales 20 tienen información incompleta.
+
+El segundo es no pensar en los gastos de envío desde el principio. Los gastos de envío son la causa número uno de abandono del carrito. Si el cliente llega al final del proceso y ve que el envío cuesta 7€ para un pedido de 15€, se va. Hay que decidir la política de envíos antes de lanzar: envío gratuito a partir de cierto importe, tarifa plana o coste real calculado automáticamente.
+
+El tercero es no tener definido el proceso de devoluciones. En España, la ley obliga a aceptar devoluciones en compras online durante 14 días. Muchos comercios locales no lo saben o no lo comunican claramente, lo que genera reclamaciones y mala reputación online.
+
+El cuarto es no hacer nada para generar tráfico. Montar la tienda y esperar a que los clientes lleguen solos es la forma más segura de que el proyecto fracase. El lanzamiento debe ir acompañado de una estrategia mínima: comunicación a la base de clientes existente, publicación en redes sociales, y si hay presupuesto, una pequeña campaña de Google Ads o Meta Ads dirigida a Soria y provincia.
+
+## ¿Es una tienda online la solución correcta para tu negocio en Soria?
+
+No todos los negocios necesitan una tienda online. Antes de invertir, conviene hacerse tres preguntas.
+
+La primera: ¿mis clientes compran online o prefieren venir al local? Para algunos negocios en Soria, el cliente local siempre preferirá el trato directo. En ese caso, una web corporativa bien posicionada que genere visitas al local es más eficiente que una tienda online.
+
+La segunda: ¿tengo productos que se pueden vender fuera de Soria? Si vendes algo único o diferenciado que puede interesar a compradores de toda España, una tienda online tiene mucho sentido. Productos artesanales de Soria, especialidades gastronómicas, productos con denominación de origen de Castilla y León son ejemplos claros.
+
+La tercera: ¿tengo capacidad de gestionar los pedidos, el stock y los envíos? Una tienda online genera operativa. Pedidos que procesar, paquetes que preparar, incidencias que resolver. Si no tienes capacidad para absorber ese trabajo adicional, empezar con una tienda pequeña y crecer gradualmente es más sensato que lanzar un catálogo de 500 productos desde el primer día.
+
+En Numancia Digital hacemos esta análisis previo con cada cliente antes de recomendar si una tienda online es la inversión correcta en su momento actual. Si la respuesta es sí, diseñamos y desarrollamos la tienda. Si no, recomendamos empezar por la web corporativa y añadir el e-commerce cuando el negocio esté listo.
+
+La consulta inicial es gratuita y sin compromiso. Y si al final decides que todavía no es el momento para la tienda online, al menos sabrás exactamente qué necesitas para cuando sí lo sea.
+        `
+    },
 ];
 
 export function getBlogPost(slug: string): BlogPost | undefined {
