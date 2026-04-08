@@ -16,6 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         '/precios',
         '/blog',
         '/contacto',
+        '/auditoria-gratuita',
         '/aviso-legal',
         '/privacidad',
         '/legal/cookies',
