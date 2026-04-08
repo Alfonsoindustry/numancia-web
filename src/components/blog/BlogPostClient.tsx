@@ -19,6 +19,13 @@ function escapeHtml(text: string): string {
         .replace(/'/g, '&#039;');
 }
 
+// Aplica formato inline (negritas, cursiva) a un fragmento de texto ya escapado
+function applyInline(text: string): string {
+    return text
+        .replace(/\*\*(.+?)\*\*/g, '<strong class="text-white font-bold">$1</strong>')
+        .replace(/\*(.+?)\*/g, '<em>$1</em>');
+}
+
 // Renderizado simple de Markdown a HTML (sin dependencias extra)
 function renderMarkdown(content: string): string {
     const lines = escapeHtml(content).split('\n');
@@ -26,30 +33,59 @@ function renderMarkdown(content: string): string {
     let inList = false;
 
     for (const raw of lines) {
-        let line = raw
-            .replace(/^## (.+)$/, '<h2 class="font-outfit text-3xl font-bold mt-12 mb-6 text-white">$1</h2>')
-            .replace(/^### (.+)$/, '<h3 class="font-outfit text-2xl font-bold mt-8 mb-4 text-white">$1</h3>')
-            .replace(/\*\*(.+?)\*\*/g, '<strong class="text-white font-bold">$1</strong>')
-            .replace(/\*(.+?)\*/g, '<em>$1</em>')
-            .replace(/^> (.+)$/, '<blockquote class="border-l-4 border-neon-orange pl-6 py-2 my-8 italic text-xl text-white/80">$1</blockquote>');
-
-        const isLi = /^- (.+)$/.test(raw);
-        const isOl = /^\d+\. (.+)$/.test(raw);
-
-        if (isLi) {
-            if (!inList) { result.push('<ul class="my-6 space-y-1 text-white/80">'); inList = true; }
-            line = raw.replace(/^- (.+)$/, '<li class="flex items-start gap-2 mb-2"><span class="text-neon-orange mt-1 shrink-0">▸</span><span>$1</span></li>');
-        } else if (isOl) {
-            if (!inList) { result.push('<ul class="my-6 space-y-1 text-white/80">'); inList = true; }
-            line = raw.replace(/^\d+\. (.+)$/, '<li class="flex items-start gap-2 mb-2"><span class="text-neon-orange font-bold shrink-0">→</span><span>$1</span></li>');
-        } else {
+        // Separador horizontal
+        if (raw.trim() === '---') {
             if (inList) { result.push('</ul>'); inList = false; }
-            if (line.trim() !== '' && !line.startsWith('<')) {
-                line = `<p class="text-white/75 leading-relaxed my-4">${line}</p>`;
-            }
+            result.push('<hr class="border-white/10 my-10" />');
+            continue;
         }
 
-        result.push(line);
+        // Headings
+        const h2 = raw.match(/^## (.+)$/);
+        if (h2) {
+            if (inList) { result.push('</ul>'); inList = false; }
+            result.push(`<h2 class="font-outfit text-3xl font-bold mt-12 mb-6 text-white">${applyInline(h2[1])}</h2>`);
+            continue;
+        }
+        const h3 = raw.match(/^### (.+)$/);
+        if (h3) {
+            if (inList) { result.push('</ul>'); inList = false; }
+            result.push(`<h3 class="font-outfit text-2xl font-bold mt-8 mb-4 text-white">${applyInline(h3[1])}</h3>`);
+            continue;
+        }
+
+        // Blockquote
+        const bq = raw.match(/^> (.+)$/);
+        if (bq) {
+            if (inList) { result.push('</ul>'); inList = false; }
+            result.push(`<blockquote class="border-l-4 border-neon-orange pl-6 py-2 my-8 italic text-xl text-white/80">${applyInline(bq[1])}</blockquote>`);
+            continue;
+        }
+
+        // Lista no ordenada
+        const li = raw.match(/^- (.+)$/);
+        if (li) {
+            if (!inList) { result.push('<ul class="my-6 space-y-1 text-white/80">'); inList = true; }
+            result.push(`<li class="flex items-start gap-2 mb-2"><span class="text-neon-orange mt-1 shrink-0">▸</span><span>${applyInline(li[1])}</span></li>`);
+            continue;
+        }
+
+        // Lista ordenada
+        const ol = raw.match(/^\d+\. (.+)$/);
+        if (ol) {
+            if (!inList) { result.push('<ul class="my-6 space-y-1 text-white/80">'); inList = true; }
+            result.push(`<li class="flex items-start gap-2 mb-2"><span class="text-neon-orange font-bold shrink-0">→</span><span>${applyInline(ol[1])}</span></li>`);
+            continue;
+        }
+
+        // Párrafo normal
+        if (inList) { result.push('</ul>'); inList = false; }
+        const inline = applyInline(raw);
+        if (inline.trim() !== '') {
+            result.push(`<p class="text-white/75 leading-relaxed my-4">${inline}</p>`);
+        } else {
+            result.push('');
+        }
     }
 
     if (inList) result.push('</ul>');

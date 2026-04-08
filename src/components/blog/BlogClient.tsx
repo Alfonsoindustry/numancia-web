@@ -16,8 +16,9 @@ const categoryColors: Record<string, string> = {
 };
 
 export default function BlogClient() {
-    const featured = blogPosts[0];
-    const rest = blogPosts.slice(1);
+    const sorted = [...blogPosts].reverse();
+    const featured = sorted[0];
+    const rest = sorted.slice(1);
 
     return (
         <div className="min-h-screen bg-[#0A0A0A] text-white selection:bg-neon-orange/30 selection:text-neon-orange">
