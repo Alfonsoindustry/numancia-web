@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import {
     CheckCircle,
@@ -76,8 +77,17 @@ export default function AuditoriaClient() {
 
             {/* Logo mínimo */}
             <header className="relative z-10 px-6 pt-6 pb-4">
-                <Link href="/" className="inline-flex items-center gap-2 text-neon-orange font-outfit font-bold text-xl">
-                    Numancia Digital
+                <Link href="/" className="inline-flex items-center gap-2 group">
+                    <Image
+                        src="/brand/logo_web_512x512.png"
+                        alt="Numancia Digital"
+                        width={36}
+                        height={36}
+                        className="rounded-lg transition-transform group-hover:scale-110"
+                    />
+                    <span className="font-outfit font-bold text-xl tracking-tight uppercase">
+                        Numancia <span className="text-neon-orange">Digital</span>
+                    </span>
                 </Link>
             </header>
 

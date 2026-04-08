@@ -80,7 +80,7 @@ export default function Navbar() {
                         )}
                     </Link>
                     <Link
-                        href="/contacto"
+                        href="/auditoria-gratuita"
                         className="bg-neon-orange text-white px-5 py-2 rounded-full font-bold hover:bg-secondary-orange hover:scale-105 transition-all neon-border"
                     >
                         Auditoría Gratis
@@ -118,7 +118,7 @@ export default function Navbar() {
                                     </Link>
                                 ))}
                                 <Link
-                                    href="/contacto"
+                                    href="/auditoria-gratuita"
                                     className="w-full text-center bg-neon-orange text-white px-8 py-4 rounded-2xl font-bold text-xl neon-border mt-4"
                                     onClick={() => setIsMobileMenuOpen(false)}
                                 >
