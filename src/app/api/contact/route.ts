@@ -55,7 +55,7 @@ export async function POST(req: Request) {
 
     try {
         const body = await req.json();
-        const { name, phone, subject, message, website } = body;
+        const { name, email, phone, subject, message, website } = body;
 
         // ── Honeypot: los bots rellenan este campo, los humanos no ──
         if (website) {
@@ -65,6 +65,9 @@ export async function POST(req: Request) {
         // ── Validación de campos ──
         if (typeof name !== 'string' || name.trim().length < 2 || name.trim().length > 100) {
             return NextResponse.json({ error: "Nombre inválido" }, { status: 400 });
+        }
+        if (typeof email !== 'string' || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim())) {
+            return NextResponse.json({ error: "Email inválido" }, { status: 400 });
         }
         if (typeof phone !== 'string' || !/^[+\d\s\-().]{7,20}$/.test(phone.trim())) {
             return NextResponse.json({ error: "Teléfono inválido" }, { status: 400 });
@@ -79,10 +82,12 @@ export async function POST(req: Request) {
         const { data, error } = await resend.emails.send({
             from: 'Numancia Digital <hola@numanciadigital.es>',
             to: ['buzon@numanciadigital.es'],
+            replyTo: email.trim(),
             subject: `Nueva Consulta: ${escapeHtml(subject)} - ${escapeHtml(name)}`,
             html: `
         <h2>Nuevo mensaje desde la web Numancia Digital</h2>
         <p><strong>Nombre:</strong> ${escapeHtml(name.trim())}</p>
+        <p><strong>Email:</strong> ${escapeHtml(email.trim())}</p>
         <p><strong>Teléfono:</strong> ${escapeHtml(phone.trim())}</p>
         <p><strong>Asunto:</strong> ${escapeHtml(subject)}</p>
         <p><strong>Mensaje:</strong></p>

@@ -93,6 +93,7 @@ export default function ContactoClient() {
     const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
     const [formData, setFormData] = useState({
         name: "",
+        email: "",
         phone: "",
         subject: "Diseño Web",
         message: "",
@@ -112,7 +113,7 @@ export default function ContactoClient() {
 
             if (response.ok) {
                 setStatus("success");
-                setFormData({ name: "", phone: "", subject: "Diseño Web", message: "", website: "" });
+                setFormData({ name: "", email: "", phone: "", subject: "Diseño Web", message: "", website: "" });
             } else {
                 setStatus("error");
             }
@@ -338,6 +339,16 @@ export default function ContactoClient() {
                                                     onChange={(v) => setFormData({ ...formData, phone: v })}
                                                 />
                                             </div>
+
+                                            {/* Email */}
+                                            <InputField
+                                                label="Email"
+                                                type="email"
+                                                required
+                                                value={formData.email}
+                                                placeholder="tu@email.com"
+                                                onChange={(v) => setFormData({ ...formData, email: v })}
+                                            />
 
                                             {/* Servicio de interés */}
                                             <div className="space-y-2">
