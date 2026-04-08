@@ -71,8 +71,8 @@ export default function AuditoriaClient() {
 
             {/* Orbs */}
             <div className="fixed inset-0 pointer-events-none overflow-hidden">
-                <div className="absolute top-0 -left-40 w-[700px] h-[700px] bg-neon-orange/8 rounded-full blur-[180px]" />
-                <div className="absolute bottom-0 -right-40 w-[500px] h-[500px] bg-neon-orange/5 rounded-full blur-[150px]" />
+                <div className="absolute top-0 -left-40 w-[600px] h-[600px] bg-neon-orange/8 rounded-full blur-[120px]" />
+                <div className="absolute bottom-0 -right-40 w-[400px] h-[400px] bg-neon-orange/5 rounded-full blur-[100px]" />
             </div>
 
             {/* Logo mínimo */}
@@ -83,6 +83,8 @@ export default function AuditoriaClient() {
                         alt="Numancia Digital"
                         width={36}
                         height={36}
+                        sizes="36px"
+                        priority
                         className="rounded-lg transition-transform group-hover:scale-110"
                     />
                     <span className="font-outfit font-bold text-xl tracking-tight uppercase">
