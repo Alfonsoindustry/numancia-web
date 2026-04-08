@@ -57,7 +57,7 @@ const servicios = [
 /* ─── Métricas destacadas ─── */
 const metricas = [
     { valor: "+150%", label: "visitas web orgánicas", icono: TrendingUp },
-    { valor: "#1", label: "en Google para su sector en Soria", icono: BarChart3 },
+    { valor: "Top 2", label: "en Google · óptica en Soria", icono: BarChart3 },
     { valor: "3 meses", label: "hasta ver los primeros resultados", icono: Clock },
     { valor: "0€", label: "en publicidad de pago", icono: CheckCircle },
 ];
