@@ -19,6 +19,15 @@ export default function AvisoLegalClient() {
                             Aviso <span className="text-neon-orange">Legal</span>
                         </h1>
 
+                            <div className="mb-10 p-5 border border-neon-orange/30 rounded-lg bg-neon-orange/5">
+                                <p className="text-sm text-neon-orange/80">
+                                    <strong className="text-neon-orange">Aviso:</strong> Este aviso legal se encuentra en proceso de actualización conforme a la constitución formal de la sociedad. Para cualquier consulta de carácter legal, contacte directamente en{" "}
+                                    <a href="mailto:buzon@numanciadigital.es" className="underline hover:text-neon-orange transition-colors">
+                                        buzon@numanciadigital.es
+                                    </a>
+                                </p>
+                            </div>
+
                         <div className="space-y-10 text-text-slate leading-relaxed">
                             <section>
                                 <h2 className="text-white font-bold text-xl mb-4 uppercase tracking-wider">1. Datos Identificativos</h2>
@@ -26,10 +35,12 @@ export default function AvisoLegalClient() {
                                     En cumplimiento con el deber de información recogido en el artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y del Comercio Electrónico (LSSI-CE), se facilitan los siguientes datos:
                                 </p>
                                 <ul className="mt-4 space-y-2 list-disc ml-5">
-                                    <li><strong>Titular:</strong> Numancia Digital (Hugo)</li>
-                                    <li><strong>Domicilio Social:</strong> Calle El Collado, Soria, España</li>
-                                    <li><strong>CIF/NIF:</strong> [Pendiente de completar]</li>
+                                    <li><strong>Nombre comercial:</strong> Numancia Digital</li>
+                                    <li><strong>Actividad:</strong> Servicios de diseño web y digitalización para PYMEs y comercios locales</li>
+                                    <li><strong>Domicilio:</strong> Soria, Castilla y León, España</li>
                                     <li><strong>Email:</strong> buzon@numanciadigital.es</li>
+                                    <li><strong>Teléfono:</strong> +34 671 883 656</li>
+                                    <li><strong>NIF/CIF:</strong> En trámite de constitución formal</li>
                                 </ul>
                             </section>
 
